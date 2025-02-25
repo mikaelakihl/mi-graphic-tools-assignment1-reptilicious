@@ -58,6 +58,7 @@ Du själv ansvarar för in task och flyttar i planeringen
 
  **SIGN HERE**
 David Kjellstrand
+Oskar Lundberg
  
 **hur er tidsplan ser ut, vad ni har för milstolpar och hur ni hanterar om ni märker att ni hamnar efter/före i planeringen**
 Skicka in bild på designen på fredag
