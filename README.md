@@ -1,4 +1,4 @@
-**när ni träffas gemensamt & hur ni gör det - kamera på/av, Teams/Discord eller bara chatt? Det är OK att vara kreativ. Man måste inte följa alla konventioner, men sätt regler för gruppen och var öppen med hur du känner och vill jobba! Då är allas förväntningar på samma nivå. Förmodligen finns det någon annan som känner precis likadant, men det är ju svårt att veta om ingen säger någonting.**
+**Hur/När vi träffas, Teams/Cam osv?**
  - 
  
 **hur, när och var ni stämmer av (arbetstider, arbetsmetoder)**
