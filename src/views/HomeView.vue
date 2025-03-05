@@ -1,5 +1,15 @@
+<script setup lang="ts">
+import PrimaryButton from '@/components/atoms/PrimaryButton.vue';
+import SecondaryButton from '@/components/atoms/SecondaryButton.vue';
+import TertiaryButton from '@/components/atoms/TertiaryButton.vue';
+
+</script>
+
 <template>
 	<h1>Home</h1>
+	<PrimaryButton />
+	<SecondaryButton />
+	<TertiaryButton />
 </template>
 
 <style lang="scss" scoped>
