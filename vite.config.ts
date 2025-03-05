@@ -3,16 +3,19 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueDevTools from 'vite-plugin-vue-devtools';
 
-
 export default defineConfig({
-  base: '/Vue/',
-  plugins: [
-    vue(),
-    vueDevTools(),
-  ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    },
-  },
+	base: '/fed24d-grafiska-verktyg-kubakrokodilerna/',
+	plugins: [vue(), vueDevTools()],
+	resolve: {
+		alias: {
+			'@': fileURLToPath(new URL('./src', import.meta.url)),
+		},
+	},
+	css: {
+		preprocessorOptions: {
+			scss: {
+				additionalData: `@import "@/style/_variables.scss";`,
+			},
+		},
+	},
 });
