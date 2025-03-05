@@ -20,24 +20,15 @@
 
 ### Fonts Variables
 
-headings - SpICY RICE
-Sub Headings - Fredoka
+headings - SpICY RICE Sub Headings - Fredoka
 
 ### colors
 
-Forest - #1D4720
-Mustard - #F7D53A
-Orange - #FBAE29
-Aged copper - #5FD891
-Emerald - #1D7462
-White - #FFFFF2
-Black - #000000
+Forest - #1D4720 Mustard - #F7D53A Orange - #FBAE29 Aged copper - #5FD891 Emerald - #1D7462 White - #FFFFF2 Black - #000000
 
 ### Margins
 
-20px
-40px
-60px
+20px 40px 60px
 
 ### Header conatins following:
 
@@ -46,9 +37,7 @@ Black - #000000
 
 #### Menu
 
-The menu is an overlay (mobile & tablet) that opens onclick with animation of a reptile that opens it's mouth and the menu comes out and back.
-On desktop is a navbar.
-Links to all views
+The menu is an overlay (mobile & tablet) that opens onclick with animation of a reptile that opens it's mouth and the menu comes out and back. On desktop is a navbar. Links to all views
 
 ### Footer conatins following:
 

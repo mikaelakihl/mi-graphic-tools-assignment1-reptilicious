@@ -100,7 +100,4 @@ If the group cannot reach someone within **24 hours (working day)**, we contact 
 ---
 
 **Signatures**  
-@matildasoderhall
-@Valentin-dot-com
-@amandawiktorsson
-@OmarAlawi16
+@matildasoderhall @Valentin-dot-com @amandawiktorsson @OmarAlawi16
