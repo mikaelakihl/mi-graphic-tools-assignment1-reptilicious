@@ -78,7 +78,6 @@ footer {
 	background-color: $forest-color;
 	color: $mustard-color;
 	font-family: $secondary-font;
-	bottom: 0;
 }
 
 span {
