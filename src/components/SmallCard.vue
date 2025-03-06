@@ -1,8 +1,18 @@
+<script setup lang="ts">
+
+const props = defineProps<{
+    cardHeader: string;
+    cardSubheader: string;
+    cardContent: string;
+}>();
+
+</script>
+
 <template>
     <article>
-        <h2>Rubrik</h2>
-        <span class="subheading">Subheading</span>
-        <p>Text</p>
+        <h2>{{ cardHeader }}</h2>
+        <sper class="subheading">{{ cardSubheader }}</sper>
+        <p class="">{{ cardContent }}</p>
     </article>
 </template>
 
@@ -13,7 +23,7 @@ article {
     border-radius: $small-card-border-radius;
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.5rem;
     padding: 1.25rem;
     filter: drop-shadow(rgba(0, 0, 0, 0.25) -4px 4px 4px);
     h2 {
