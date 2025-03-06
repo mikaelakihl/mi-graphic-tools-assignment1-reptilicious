@@ -19,4 +19,10 @@ body {
 	background-size: cover;
 }
 
+@media screen and (min-width: 1280px) {
+	body {
+		background-image: url(src/assets/images/reptilicious_backgroundimg_desktop_1.jpg);
+	}
+}
+
 </style>
