@@ -22,13 +22,16 @@ import SmallCard from '@/components/SmallCard.vue';
 			<!-- <Carousel /> -->
 			<TertiaryButton />
 			<!-- TODO: Add props to change label for button to: "All flavors" -->
-			<SmallCard cardHeader="Reptilicious" cardSubheader="Wildly Delicious" cardContent="Unleash your inner adventurer with Reptilicious! Our jungle-inspired candies deliver bold, unforgettable flavors that take you on a wild ride. Whether you crave sweetness, saltiness, or sourness, every bite is a journey into the heart of the wild. Get ready to snack like never before!" />
+			<SmallCard
+				cardHeader="Reptilicious"
+				cardSubheader="Wildly Delicious"
+				cardContent="Unleash your inner adventurer with Reptilicious! Our jungle-inspired candies deliver bold, unforgettable flavors that take you on a wild ride. Whether you crave sweetness, saltiness, or sourness, every bite is a journey into the heart of the wild. Get ready to snack like never before!"
+			/>
 		</div>
 	</div>
 </template>
 
 <style lang="scss" scoped>
-
 .home-view {
 	min-width: 100vw;
 	display: flex;
@@ -56,6 +59,7 @@ import SmallCard from '@/components/SmallCard.vue';
 	.content-container {
 		margin-top: $large-margin;
 		margin-bottom: $large-margin;
+		margin-inline: $small-margin;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -63,4 +67,19 @@ import SmallCard from '@/components/SmallCard.vue';
 	}
 }
 
+@media screen and (min-width: 800px) {
+	.home-view {
+		.content-container {
+			margin-inline: $large-margin;
+		}
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.home-view {
+		.content-container {
+			max-width: 35vw;
+		}
+	}
+}
 </style>
