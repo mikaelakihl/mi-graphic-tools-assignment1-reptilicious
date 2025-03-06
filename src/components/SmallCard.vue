@@ -12,7 +12,7 @@ const props = defineProps<{
     <article>
         <h2>{{ cardHeader }}</h2>
         <sper class="subheading">{{ cardSubheader }}</sper>
-        <p class="">{{ cardContent }}</p>
+        <p>{{ cardContent }}</p>
     </article>
 </template>
 
