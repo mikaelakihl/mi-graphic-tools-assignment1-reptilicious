@@ -48,7 +48,6 @@ import SmallCard from '@/components/SmallCard.vue';
 			font-family: $primary-font;
 			font-size: $h3-fontsize;
 			text-transform: uppercase;
-			margin: 0; //TODO: Remove this one after adding CSS-normalize
 			margin-bottom: 0.5rem;
 		}
 		span {
