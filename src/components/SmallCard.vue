@@ -30,17 +30,14 @@ article {
         font-family: $primary-font;
         font-size: $h3-fontsize;
         text-transform: uppercase;
-        margin: 0;
     }
     .subheading {
         font-family: $secondary-font;
         font-size: $subhead-fontsize;
-        margin: 0;
     }
     p {
         font-family: $secondary-font;
         font-size: $body-fontsize;
-        margin: 0;
     }
 }
 </style>
