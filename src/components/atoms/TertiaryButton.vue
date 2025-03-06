@@ -1,7 +1,14 @@
+<script setup lang="ts">
+
+const props = defineProps<{
+    buttonLabel: string;
+}>();
+
+</script>
 
 <template>
     <button>
-        Click  
+        {{ buttonLabel }}  
     </button>
 </template>
 
@@ -12,7 +19,7 @@ button {
     color: $orange-color;
     border: solid 3px $orange-color;
     border-radius: $button-border-radius;
-    padding-inline: 2.5rem;
+    padding-inline: $small-margin;
     font-family: $primary-font;
     font-size: $h4-fontsize;
     text-transform: uppercase;
