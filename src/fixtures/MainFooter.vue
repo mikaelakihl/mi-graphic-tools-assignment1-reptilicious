@@ -120,6 +120,10 @@ ul {
 		display: flex;
 		flex-direction: column;
 		padding: 0;
+		width: 100vw;
+		position: absolute;
+		bottom: 0;
+		left: 0;
 	}
 
 	.follow-us-container {
