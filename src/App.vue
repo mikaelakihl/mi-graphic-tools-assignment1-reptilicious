@@ -17,6 +17,8 @@ body {
 	background-image: url(src/assets/images/reptilicious_backgroundimg_phone_1.png);
 	background-position: top;
 	background-size: cover;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 @media screen and (min-width: 1280px) {

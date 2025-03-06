@@ -33,7 +33,7 @@ import SmallCard from '@/components/SmallCard.vue';
 
 <style lang="scss" scoped>
 .home-view {
-	min-width: 100vw;
+	max-width: 100vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
