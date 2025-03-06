@@ -10,4 +10,13 @@ import { RouterLink, RouterView } from 'vue-router';
 	<RouterView />
 </template>
 
-<style></style>
+<style lang="scss">
+
+body {
+	margin: 0;
+	background-image: url(src/assets/images/reptilicious_backgroundimg_phone_1.png);
+	background-position: top;
+	background-size: cover;
+}
+
+</style>
