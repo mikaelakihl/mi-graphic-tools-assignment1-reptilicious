@@ -67,7 +67,7 @@ import SmallCard from '../components/SmallCard.vue';
 	}
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: $tablet-size) {
 	.home-view {
 		.content-container {
 			margin-inline: $large-margin;
@@ -76,7 +76,7 @@ import SmallCard from '../components/SmallCard.vue';
 	}
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $desktop-size) {
 	.home-view {
 		.content-container {
 			max-width: 35vw;
