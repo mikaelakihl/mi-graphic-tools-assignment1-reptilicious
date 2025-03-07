@@ -31,7 +31,6 @@ export default defineComponent({
 .menu-text {
 	font-size: 1.2rem;
 	color: #ffe552;
-	font-weight: bold;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -49,7 +48,6 @@ export default defineComponent({
 .line {
 	width: 100%;
 	height: 0.3rem;
-	border-radius: 5px;
 	background-color: #ffe552;
 }
 
