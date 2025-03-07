@@ -20,6 +20,8 @@ body {
 	background-size: cover;
 	max-width: 100%;
 	overflow-x: hidden;
+	position: relative;
+	min-height: 100vh;
 }
 
 @media screen and (min-width: 1280px) {

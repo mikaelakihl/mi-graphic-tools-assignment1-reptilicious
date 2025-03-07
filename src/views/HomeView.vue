@@ -70,6 +70,7 @@ import SmallCard from '@/components/SmallCard.vue';
 	.home-view {
 		.content-container {
 			margin-inline: $large-margin;
+			margin-bottom: 10rem;
 		}
 	}
 }
