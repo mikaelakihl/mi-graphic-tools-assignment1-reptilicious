@@ -1,21 +1,23 @@
 <template>
 	<div class="carousel">
-		<ImageCarouselArrows direction="left" @click="prevImage" />
+		<div class="carousel-inner">
+			<ImageCarouselArrows direction="left" @click="prevImage" />
 
-		<div class="carousel-images">
-			<img
-				v-for="(image, index) in images"
-				:key="index"
-				:src="image"
-				:class="[
-					'carousel-image',
-					{ left: index === leftIndex, center: index === currentIndex, right: index === rightIndex },
-				]"
-				alt="Carousel image"
-			/>
+			<div class="carousel-images">
+				<img
+					v-for="(image, index) in images"
+					:key="index"
+					:src="image"
+					:class="[
+						'carousel-image',
+						{ left: index === leftIndex, center: index === currentIndex, right: index === rightIndex },
+					]"
+					alt="Carousel image"
+				/>
+			</div>
+
+			<ImageCarouselArrows direction="right" @click="nextImage" class="carousel-arrow right" />
 		</div>
-
-		<ImageCarouselArrows direction="right" @click="nextImage" class="carousel-arrow right" />
 		<ImageCarouselDots :current="currentIndex" :total="images.length" />
 	</div>
 </template>
@@ -38,20 +40,38 @@ const currentIndex = ref(0);
 // Calculate the index for the left and right images
 const leftIndex = computed(() => (currentIndex.value - 1 + images.length) % images.length);
 const rightIndex = computed(() => (currentIndex.value + 1) % images.length);
+const isAnimating = ref(false);
 
 // function to change img
 function nextImage() {
+	if (isAnimating.value) return; // Stoppa om en animation redan pågår
+	isAnimating.value = true;
+
 	currentIndex.value = (currentIndex.value + 1) % images.length;
+	console.log('Next image, currentIndex:', currentIndex.value);
+
+	setTimeout(() => {
+		isAnimating.value = false;
+	}, 500); // Vänta tills animationen är klar
 }
 
 function prevImage() {
+	if (isAnimating.value) return; // Stoppa om en animation redan pågår
+	isAnimating.value = true;
+
 	currentIndex.value = (currentIndex.value - 1 + images.length) % images.length;
+	console.log('Previous image, currentIndex:', currentIndex.value);
+
+	setTimeout(() => {
+		isAnimating.value = false;
+	}, 500);
 }
 </script>
 
 <style lang="scss" scoped>
 .carousel {
-	max-width: 450px;
+	min-width: 350px;
+	max-width: 600px;
 	margin: 0 auto;
 	padding: 20px;
 	position: relative;
@@ -66,9 +86,9 @@ function prevImage() {
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	height: 30vh;
+	height: 50vw;
 	width: 100%;
-	max-width: 400px;
+	min-width: 250px;
 }
 
 /* img */
@@ -87,6 +107,10 @@ function prevImage() {
 	transform: translateX(-25%) scale(0.85);
 	opacity: 0.7;
 	z-index: 1;
+}
+
+.carousel-inner {
+	width: 90%;
 }
 
 .carousel-image.center {

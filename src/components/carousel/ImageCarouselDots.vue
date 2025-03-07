@@ -20,6 +20,7 @@ defineProps<{
 	background-color: $grey-color;
 	padding: 5px 0;
 	border-radius: 25px;
+	margin-top: 50px;
 }
 
 .dot {
