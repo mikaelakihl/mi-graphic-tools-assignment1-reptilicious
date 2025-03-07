@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router';
 import MainFooter from '@/fixtures/MainFooter.vue';
+import HeaderMobile from '@/fixtures/HeaderMobile.vue';
 </script>
 
 <template>
+	<HeaderMobile />
 	<RouterLink to="/">Home</RouterLink>
 	<RouterLink to="product">Products</RouterLink>
 	<RouterLink to="about">About</RouterLink>
@@ -13,7 +15,6 @@ import MainFooter from '@/fixtures/MainFooter.vue';
 </template>
 
 <style lang="scss">
-
 body {
 	background-image: url(src/assets/images/reptilicious_backgroundimg_phone_1.png);
 	background-position: top;
@@ -29,5 +30,4 @@ body {
 		background-image: url(src/assets/images/reptilicious_backgroundimg_desktop_1.jpg);
 	}
 }
-
 </style>

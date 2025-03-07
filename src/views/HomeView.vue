@@ -21,7 +21,7 @@ import SmallCard from '../components/SmallCard.vue';
 		</section>
 		<div class="content-container">
 			<ImageCarousel />
-			<TertiaryButton buttonLabel="All flavors" type="button" @click="$router.push('product')"/>
+			<TertiaryButton buttonLabel="All flavors" type="button" @click="$router.push('product')" />
 			<!-- TODO: Add props to change label for button to: "All flavors" -->
 			<SmallCard
 				cardHeader="Reptilicious"
