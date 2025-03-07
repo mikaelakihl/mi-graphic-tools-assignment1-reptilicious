@@ -1,3 +1,13 @@
+<script lang="ts" setup>
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
+import MenuIcon from '../components/atoms/MenuIcon.vue';
+
+const route = useRoute();
+
+const isHomePage = computed(() => route.name === 'home');
+</script>
+
 <template>
 	<header class="header-mobile">
 		<div class="r-logo" v-if="!isHomePage">
@@ -26,23 +36,6 @@
 		<MenuIcon />
 	</header>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue';
-import MenuIcon from '../components/atoms/MenuIcon.vue';
-
-export default defineComponent({
-	name: 'HeaderMobile',
-	components: {
-		MenuIcon,
-	},
-	computed: {
-		isHomePage() {
-			return this.$route.name === 'home';
-		},
-	},
-});
-</script>
 
 <style lang="scss" scoped>
 .header-mobile {
