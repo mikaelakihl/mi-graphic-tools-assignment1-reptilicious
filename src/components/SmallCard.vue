@@ -11,7 +11,7 @@ const props = defineProps<{
 <template>
     <article>
         <h2>{{ cardHeader }}</h2>
-        <sper class="subheading">{{ cardSubheader }}</sper>
+        <span class="subheading">{{ cardSubheader }}</span>
         <p>{{ cardContent }}</p>
     </article>
 </template>

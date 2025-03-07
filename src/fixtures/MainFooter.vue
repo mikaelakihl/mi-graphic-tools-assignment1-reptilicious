@@ -99,7 +99,13 @@ span {
 .social-media-links {
 	padding-bottom: $medium-margin;
 	display: flex;
+
 	justify-content: space-around;
+	height: 100%;
+	svg {
+		height: 100%;
+		width: auto;
+	}
 }
 
 ul {
@@ -130,6 +136,11 @@ ul {
 		order: 2;
 		display: flex;
 		justify-content: center;
+		align-items: center;
+		.follow-us-span {
+			height: auto;
+			padding-bottom: $medium-margin;
+		}
 
 		svg {
 			padding-left: $small-margin;
