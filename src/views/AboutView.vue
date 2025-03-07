@@ -5,7 +5,7 @@ import SecondaryButton from '../components/atoms/SecondaryButton.vue';
 </script>
 
 <template>
-	<section class="about-view">
+	<main>
 		<h1>About us</h1>
 
 		<div class="about-content-container">
@@ -41,11 +41,12 @@ import SecondaryButton from '../components/atoms/SecondaryButton.vue';
 				</div>
 			</form>
 		</section>
-	</section>
+	</main>
 </template>
 
 <style lang="scss" scoped>
-.about-view {
+// Keep main and h1 in scoped CSS, move the rest to main.scss
+main {
 	max-width: 100vw;
 	display: flex;
 	flex-direction: column;
@@ -59,6 +60,7 @@ import SecondaryButton from '../components/atoms/SecondaryButton.vue';
 		text-transform: uppercase;
 		color: $mustard-color;
 	}
+	// ----- Keep above -------------------
 	.about-content-container {
 		display: flex;
 		flex-direction: column;
@@ -116,7 +118,7 @@ import SecondaryButton from '../components/atoms/SecondaryButton.vue';
 }
 
 @media screen and (min-width: $tablet-size) {
-	.about-view {
+	main {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
 		column-gap: $small-margin;
@@ -136,7 +138,7 @@ import SecondaryButton from '../components/atoms/SecondaryButton.vue';
 }
 
 @media screen and (min-width: $desktop-size) {
-	.about-view {
+	main {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		column-gap: $small-margin;

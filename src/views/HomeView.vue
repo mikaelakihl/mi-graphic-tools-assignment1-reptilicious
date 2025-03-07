@@ -5,7 +5,7 @@ import SmallCard from '../components/SmallCard.vue';
 </script>
 
 <template>
-	<div class="home-view">
+	<main>
 		<figure>
 			<img
 				src="@/assets/images/reptilicious_logo.png"
@@ -29,11 +29,11 @@ import SmallCard from '../components/SmallCard.vue';
 				cardContent="Unleash your inner adventurer with Reptilicious! Our jungle-inspired candies deliver bold, unforgettable flavors that take you on a wild ride. Whether you crave sweetness, saltiness, or sourness, every bite is a journey into the heart of the wild. Get ready to snack like never before!"
 			/>
 		</div>
-	</div>
+	</main>
 </template>
 
 <style lang="scss" scoped>
-.home-view {
+main {
 	max-width: 100vw;
 	display: flex;
 	flex-direction: column;
@@ -68,7 +68,7 @@ import SmallCard from '../components/SmallCard.vue';
 }
 
 @media screen and (min-width: $tablet-size) {
-	.home-view {
+	main {
 		.content-container {
 			margin-inline: $large-margin;
 			margin-bottom: 10rem;
@@ -77,7 +77,7 @@ import SmallCard from '../components/SmallCard.vue';
 }
 
 @media screen and (min-width: $desktop-size) {
-	.home-view {
+	main {
 		.content-container {
 			max-width: 35vw;
 		}
