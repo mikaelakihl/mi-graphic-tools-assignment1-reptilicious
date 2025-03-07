@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import MenuIcon from '@/components/atoms/MenuIcon.vue';
+import MenuIcon from '../components/atoms/MenuIcon.vue';
 
 export default defineComponent({
 	name: 'HeaderMobile',

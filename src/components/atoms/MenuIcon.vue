@@ -1,57 +1,68 @@
+<script setup lang="ts"></script>
+
 <template>
-	<div class="menu-icon">
-		<span class="menu-text">menu</span>
-		<div class="menu-lines">
-			<div class="line top"></div>
-			<div class="line middle"></div>
-			<div class="line bottom"></div>
+	<button class="menu-icon">
+		<div class="lines">
+			<span class="line top-line"></span>
+			<span class="line middle-line"></span>
+			<span class="line bottom-line"></span>
 		</div>
-	</div>
+		<span class="menu-text">menu</span>
+	</button>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-	name: 'MenuIcon',
-});
-</script>
 
 <style lang="scss" scoped>
 .menu-icon {
-	width: 4.78844rem;
-	height: 3.4375rem;
+	position: relative;
+	width: 4.8rem;
+	height: 3.5rem;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	position: relative;
-}
-
-.menu-text {
-	font-size: 1.2rem;
-	color: #ffe552;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-.menu-lines {
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
-	position: absolute;
-	width: 100%;
-	height: 100%;
+	border: none;
+	background: none;
+	cursor: pointer;
+	padding: 0;
 }
 
 .line {
-	width: 100%;
-	height: 0.3rem;
-	background-color: #ffe552;
+	position: absolute;
+	max-width: 4rem;
+	height: 0.4rem;
+	display: block;
+	left: 0;
 }
 
-.middle {
+.top-line {
+	background-color: #ffe552;
+	width: 3.8rem;
+	top: 42%;
+	transform: rotate(7deg) translateY(-1rem);
+}
+
+.middle-line {
 	background-color: #fbae29;
+	width: 3.9rem;
+	top: 45%;
+	transform: rotate(-5deg) translateY(0.2rem);
+	z-index: -1;
+}
+
+.bottom-line {
+	background-color: #ffe552;
+	width: 100%;
+	top: 52%;
+	transform: rotate(2deg) translateY(1rem);
+}
+
+.menu-text {
+	font-size: 0.97rem;
+	font-weight: 400;
+	color: #ffe552;
+	position: absolute;
+	top: 20%;
+	left: 0;
+	transform: rotate(-1deg) translateY(0.1rem);
+	z-index: 1;
 }
 </style>

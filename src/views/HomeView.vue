@@ -2,6 +2,7 @@
 import TertiaryButton from '../components/atoms/TertiaryButton.vue';
 import ImageCarousel from '../components/carousel/ImageCarousel.vue';
 import SmallCard from '../components/SmallCard.vue';
+import HeaderMobile from '../fixtures/HeaderMobile.vue';
 </script>
 
 <template>
