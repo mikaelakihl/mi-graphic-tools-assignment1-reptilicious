@@ -1,14 +1,15 @@
 <script setup lang="ts">
 
 const props = defineProps<{
-    buttonLabel: string;
+	buttonLabel: string;
+	type?: 'button' | 'submit' | 'reset';
 }>();
 
 </script>
 
 <template>
-    <button>
-        {{ buttonLabel }}  
+    <button :type="type">
+        {{ buttonLabel }}
     </button>
 </template>
 
