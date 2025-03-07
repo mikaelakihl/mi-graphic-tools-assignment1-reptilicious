@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router';
-import MainFooter from '../fixtures/MainFooter.vue';
-import HeaderMobile from '../fixtures/HeaderMobile.vue';
+import MainFooter from '@/fixtures/MainFooter.vue';
+import HeaderMobile from '@/fixtures/HeaderMobile.vue';
 </script>
 
 <template>
