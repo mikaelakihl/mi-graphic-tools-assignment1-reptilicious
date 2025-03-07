@@ -2,13 +2,9 @@
 import SmallCard from '../components/SmallCard.vue';
 import PrimaryButton from '../components/atoms/PrimaryButton.vue';
 import SecondaryButton from '../components/atoms/SecondaryButton.vue';
-import HeaderMobile from '../fixtures/HeaderMobile.vue';
 </script>
 
 <template>
-	<header>
-		<HeaderMobile />
-	</header>
 	<main>
 		<h1>About us</h1>
 
