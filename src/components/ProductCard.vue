@@ -23,4 +23,36 @@ const props = defineProps<{
 	</article>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+article {
+	background-color: $white-color;
+	margin: $small-margin;
+	padding: $small-margin;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.img-container {
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+h2 {
+	font-family: $primary-font;
+	font-size: $h3-fontsize;
+	color: $forest-color;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: $secondary-font;
+	color: $forest-color;
+}
+</style>
