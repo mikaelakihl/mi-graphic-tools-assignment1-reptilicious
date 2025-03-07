@@ -1,18 +1,29 @@
+<script setup lang="ts">
+
+const props = defineProps<{
+    buttonLabel: string;
+}>();
+
+</script>
+
 <template>
-	<button>Click</button>
+    <button>
+        {{ buttonLabel }}  
+    </button>
 </template>
 
 <style lang="scss" scoped>
 button {
-	background-color: $forest-color;
-	color: $orange-color;
-	border: solid 3px $orange-color;
-	border-radius: $button-border-radius;
-	padding-inline: 2.5rem;
-	font-family: $primary-font;
-	font-size: $h4-fontsize;
-	text-transform: uppercase;
-	filter: drop-shadow(rgba(0, 0, 0, 0.25) -4px 4px 4px);
+
+    background-color: $forest-color;
+    color: $orange-color;
+    border: solid 3px $orange-color;
+    border-radius: $button-border-radius;
+    padding-inline: $small-margin;
+    font-family: $primary-font;
+    font-size: $h4-fontsize;
+    text-transform: uppercase;
+    filter: drop-shadow(rgba(0, 0, 0, 0.25) -4px 4px 4px);
 }
 
 button:hover {
