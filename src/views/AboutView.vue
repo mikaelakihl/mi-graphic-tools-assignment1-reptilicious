@@ -43,3 +43,116 @@ import SecondaryButton from '../components/atoms/SecondaryButton.vue';
 		</section>
 	</section>
 </template>
+
+<style lang="scss" scoped>
+.about-view {
+	max-width: 100vw;
+	display: flex;
+	flex-direction: column;
+	gap: $medium-margin;
+	margin: $small-margin;
+	align-items: center;
+	margin-bottom: $large-margin;
+	h1 {
+		font-family: $primary-font;
+		font-size: $h2-fontsize;
+		text-transform: uppercase;
+		color: $mustard-color;
+	}
+	.about-content-container {
+		display: flex;
+		flex-direction: column;
+		gap: $small-margin;
+	}
+	.contact-us-container {
+		min-width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: $small-margin;
+		h2 {
+			font-family: $primary-font;
+			font-size: $h2-fontsize;
+			text-transform: uppercase;
+			color: $mustard-color;
+		}
+	}
+	.contact-form {
+		min-width: 100%;
+		background-color: $emerald-color;
+		display: flex;
+		flex-direction: column;
+		gap: $small-margin;
+		padding: $small-margin;
+		border-radius: $small-card-border-radius;
+		filter: drop-shadow(rgba(0, 0, 0, 0.25) -4px 4px 4px);
+		label {
+			display: flex;
+			flex-direction: column;
+			gap: 0.25rem;
+		}
+		.label-span {
+			font-family: $primary-font;
+			font-size: $h4-fontsize;
+			color: $mustard-color;
+			filter: drop-shadow(rgba(0, 0, 0, 0.25) -4px 4px 4px);
+		}
+		.form-input {
+			padding: 0.5rem;
+			border-radius: $input-field-border-radius;
+			border: none;
+			font-family: $secondary-font;
+			font-size: $body-fontsize;
+		}
+		.buttons-container {
+			display: flex;
+			justify-content: center;
+			gap: $small-margin;
+			button {
+				flex: 1;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $tablet-size) {
+	.about-view {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		column-gap: $small-margin;
+		margin-inline: $large-margin;
+		h1 {
+			grid-column: span 6;
+			text-align: center;
+		}
+		.about-content-container {
+			grid-column: span 3;
+		}
+		.contact-us-container {
+			grid-column: span 3;
+			// height: 100%;
+		}
+	}
+}
+
+@media screen and (min-width: $desktop-size) {
+	.about-view {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		column-gap: $small-margin;
+		margin-inline: $small-margin;
+		h1 {
+			grid-column: span 12;
+			text-align: center;
+			visibility: hidden; // TODO: Alternativt display: none om den istället ska finnas i headern
+		}
+		.about-content-container {
+			grid-column: 3 / span 3;
+		}
+		.contact-us-container {
+			grid-column: 8 / span 3;
+		}
+	}
+}
+
+</style>
