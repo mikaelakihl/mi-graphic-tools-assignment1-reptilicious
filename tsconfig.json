@@ -8,5 +8,5 @@
 		"esModuleInterop": true,
 		"skipLibCheck": true
 	},
-	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"]
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "env.d.ts", "assets.d.ts"]
 }

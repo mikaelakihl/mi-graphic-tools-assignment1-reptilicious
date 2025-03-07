@@ -1,17 +1,25 @@
+<script setup lang="ts">
+
+const props = defineProps<{
+    buttonLabel: string;
+}>();
+
+</script>
 
 <template>
     <button>
-        Click  
+        {{ buttonLabel }}  
     </button>
 </template>
 
 <style lang="scss" scoped>
 button {
+
     background-color: $forest-color;
     color: $mustard-color;
     border: solid 3px $mustard-color;
     border-radius: $button-border-radius;
-    padding-inline: 2.5rem;
+    padding-inline: $small-margin;
     font-family: $primary-font;
     font-size: $h4-fontsize;
     text-transform: uppercase;
@@ -19,15 +27,14 @@ button {
 }
 
 button:hover {
-    background-color: $forest-color;
-    color: $aged-copper-color;
-    border: solid 3px $aged-copper-color;
+	background-color: $forest-color;
+	color: $aged-copper-color;
+	border: solid 3px $aged-copper-color;
 }
 
 button:active {
-    background-color: $mustard-color;
-    color: $forest-color;
-    border: solid 3px $forest-color;
+	background-color: $mustard-color;
+	color: $forest-color;
+	border: solid 3px $forest-color;
 }
-
 </style>

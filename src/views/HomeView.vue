@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import TertiaryButton from '@/components/atoms/TertiaryButton.vue';
-import SmallCard from '@/components/SmallCard.vue';
-import HeaderMobile from '@/fixtures/HeaderMobile.vue';
+import TertiaryButton from '../components/atoms/TertiaryButton.vue';
+import ImageCarousel from '../components/carousel/ImageCarousel.vue';
+import SmallCard from '../components/SmallCard.vue';
 </script>
 
 <template>
@@ -22,8 +22,8 @@ import HeaderMobile from '@/fixtures/HeaderMobile.vue';
 			<span>Explore a World of Flavors</span>
 		</section>
 		<div class="content-container">
-			<!-- <Carousel /> -->
-			<TertiaryButton @click="$router.push('product')" />
+			<ImageCarousel />
+			<TertiaryButton buttonLabel="All flavors" @click="$router.push('product')" />
 			<!-- TODO: Add props to change label for button to: "All flavors" -->
 			<SmallCard
 				cardHeader="Reptilicious"
@@ -73,6 +73,7 @@ import HeaderMobile from '@/fixtures/HeaderMobile.vue';
 	.home-view {
 		.content-container {
 			margin-inline: $large-margin;
+			margin-bottom: 10rem;
 		}
 	}
 }
