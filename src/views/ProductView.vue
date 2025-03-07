@@ -15,4 +15,18 @@ import krokodileImageRed from '../assets/images/krokodil_kobra_red.png';
 		:cardSubheader="'Sweet'"
 		:cardContent="'Our famous cola flavored crocodiles!'"
 	/>
+	<ProductCard
+		:imgSrc="krokodileImageRed"
+		:imgAlt="'A bunch of happy reptiles in a red jungle'"
+		:cardHeader="'King Cobras'"
+		:cardSubheader="'Sour'"
+		:cardContent="'Nothing beats the king!'"
+	/>
+	<ProductCard
+		:imgSrc="krokodileImageBlue"
+		:imgAlt="'A bunch of happy reptiles in a blue jungle'"
+		:cardHeader="'Lizard Sizzle'"
+		:cardSubheader="'Salty'"
+		:cardContent="'These lizards are sizzling!'"
+	/>
 </template>
