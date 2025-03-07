@@ -51,4 +51,8 @@ h1 {
 	font-size: $h1-fontsize;
 	color: $mustard-color;
 }
+
+article {
+	min-width: 100%;
+}
 </style>
