@@ -31,6 +31,7 @@ article {
 	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
+	gap: 20px;
 }
 .img-container {
 	height: auto;
@@ -51,8 +52,17 @@ h2 {
 	text-transform: uppercase;
 }
 
+span,
 p {
 	font-family: $secondary-font;
 	color: $forest-color;
+}
+
+span {
+	font-size: $subhead-fontsize;
+}
+
+button {
+	width: 60%;
 }
 </style>
