@@ -60,6 +60,5 @@ export default defineComponent({
 	flex-shrink: 0;
 	position: absolute;
 	left: 5%;
-	top: 2.5%;
 }
 </style>

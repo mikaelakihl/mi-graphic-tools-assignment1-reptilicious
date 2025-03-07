@@ -6,6 +6,9 @@ import HeaderMobile from '../fixtures/HeaderMobile.vue';
 </script>
 
 <template>
+	<header>
+		<HeaderMobile />
+	</header>
 	<main>
 		<figure>
 			<img

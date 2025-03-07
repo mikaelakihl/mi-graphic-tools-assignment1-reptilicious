@@ -3,7 +3,8 @@ import HeaderMobile from '../fixtures/HeaderMobile.vue';
 </script>
 
 <template>
-	<HeaderMobile />
-
+	<header>
+		<HeaderMobile />
+	</header>
 	<h1>Products</h1>
 </template>
