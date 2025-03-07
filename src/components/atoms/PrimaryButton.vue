@@ -14,6 +14,7 @@ const props = defineProps<{
 
 <style lang="scss" scoped>
 button {
+
     background-color: $forest-color;
     color: $mustard-color;
     border: solid 3px $mustard-color;
@@ -26,15 +27,14 @@ button {
 }
 
 button:hover {
-    background-color: $forest-color;
-    color: $aged-copper-color;
-    border: solid 3px $aged-copper-color;
+	background-color: $forest-color;
+	color: $aged-copper-color;
+	border: solid 3px $aged-copper-color;
 }
 
 button:active {
-    background-color: $mustard-color;
-    color: $forest-color;
-    border: solid 3px $forest-color;
+	background-color: $mustard-color;
+	color: $forest-color;
+	border: solid 3px $forest-color;
 }
-
 </style>

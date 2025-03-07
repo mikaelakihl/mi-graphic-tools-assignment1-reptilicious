@@ -27,15 +27,14 @@ button {
 }
 
 button:hover {
-    background-color: $forest-color;
-    color: $aged-copper-color;
-    border: solid 3px $aged-copper-color;
+	background-color: $forest-color;
+	color: $aged-copper-color;
+	border: solid 3px $aged-copper-color;
 }
 
 button:active {
-    background-color: $orange-color;
-    color: $forest-color;
-    border: solid 3px $forest-color;
+	background-color: $orange-color;
+	color: $forest-color;
+	border: solid 3px $forest-color;
 }
-
 </style>
