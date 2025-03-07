@@ -12,7 +12,7 @@ import krokodileImageRed from '../assets/images/krokodil_kobra_red.png';
 		:imgSrc="krokodileImageGreen"
 		:imgAlt="'A bunch of happy reptiles in a green jungle'"
 		:cardHeader="'Cuban Crocodiles'"
-		:cardSubHeader="'Sweet'"
+		:cardSubheader="'Sweet'"
 		:cardContent="'Our famous cola flavored crocodiles!'"
 	/>
 </template>
