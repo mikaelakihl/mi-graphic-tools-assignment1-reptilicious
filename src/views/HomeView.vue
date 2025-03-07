@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import PrimaryButton from '@/components/atoms/PrimaryButton.vue';
-import SecondaryButton from '@/components/atoms/SecondaryButton.vue';
-import TertiaryButton from '@/components/atoms/TertiaryButton.vue';
-
+import PrimaryButton from '../components/atoms/PrimaryButton.vue';
+import SecondaryButton from '../components/atoms/SecondaryButton.vue';
+import TertiaryButton from '../components/atoms/TertiaryButton.vue';
+import ImageCarousel from '../components/carousel/ImageCarousel.vue';
 </script>
 
 <template>
@@ -10,13 +10,13 @@ import TertiaryButton from '@/components/atoms/TertiaryButton.vue';
 	<PrimaryButton />
 	<SecondaryButton />
 	<TertiaryButton />
+
+	<ImageCarousel />
 </template>
 
 <style lang="scss" scoped>
-
 h1 {
 	font-family: $primary-font;
 	font-size: $h1-fontsize;
 }
-
 </style>
