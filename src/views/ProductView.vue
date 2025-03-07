@@ -40,10 +40,11 @@ import krokodileImageRed from '../assets/images/krokodil_kobra_red.png';
 
 <style lang="scss" scoped>
 main {
-	margin: $small-margin;
+	margin: 60px $small-margin;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: $small-margin;
 }
 h1 {
 	font-family: $primary-font;

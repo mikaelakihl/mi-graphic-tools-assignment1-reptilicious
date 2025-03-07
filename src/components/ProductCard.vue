@@ -26,12 +26,12 @@ const props = defineProps<{
 <style lang="scss" scoped>
 article {
 	background-color: $white-color;
-	margin: $small-margin;
 	padding: $small-margin;
 	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: $small-margin;
+	min-width: 100%;
 }
 .img-container {
 	height: auto;
