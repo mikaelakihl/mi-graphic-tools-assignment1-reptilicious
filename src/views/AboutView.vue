@@ -5,10 +5,6 @@ import SecondaryButton from '../components/atoms/SecondaryButton.vue';
 import HeaderMobile from '../fixtures/HeaderMobile.vue';
 </script>
 
-<script setup lang="ts">
-import HeaderMobile from '../fixtures/HeaderMobile.vue';
-</script>
-
 <template>
 	<header>
 		<HeaderMobile />
