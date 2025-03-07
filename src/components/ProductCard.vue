@@ -12,7 +12,7 @@ const props = defineProps<{
 </script>
 
 <template>
-	<article>
+	<article class="product-card">
 		<div class="img-container">
 			<img :src="imgSrc" :alt="imgAlt" width="256" height="261" />
 		</div>
@@ -64,5 +64,12 @@ span {
 
 button {
 	width: 60%;
+}
+
+@media screen and (min-width: $tablet-size) {
+	article {
+		min-width: 335px;
+		min-height: 568px;
+	}
 }
 </style>
