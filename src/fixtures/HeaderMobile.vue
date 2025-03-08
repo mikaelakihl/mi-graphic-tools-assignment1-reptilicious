@@ -1,11 +1,15 @@
 <script lang="ts" setup>
-import { computed } from 'vue';
+import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import MenuIcon from '../components/atoms/MenuIcon.vue';
 
 const route = useRoute();
-
 const isHomePage = computed(() => route.name === 'home');
+
+const menuOpen = ref(false);
+const toggleMenu = () => {
+	menuOpen.value = !menuOpen.value;
+};
 </script>
 
 <template>
@@ -33,7 +37,16 @@ const isHomePage = computed(() => route.name === 'home');
 				</defs>
 			</svg>
 		</div>
-		<MenuIcon />
+
+		<MenuIcon :menuOpen="menuOpen" @toggle-menu="toggleMenu" />
+
+		<div class="menu-overlay" :class="{ open: menuOpen }">
+			<nav class="menu">
+				<a href="#">Home</a>
+				<a href="#">Products</a>
+				<a href="#">About Us</a>
+			</nav>
+		</div>
 	</header>
 </template>
 
@@ -53,5 +66,49 @@ const isHomePage = computed(() => route.name === 'home');
 	flex-shrink: 0;
 	position: absolute;
 	left: 5%;
+}
+
+.menu-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(5, 106, 85, 0.95);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 0.5s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 10;
+}
+
+.menu-overlay.open {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Links */
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+
+.menu a {
+	font-family: 'Spicy Rice', sans-serif;
+	font-size: 3rem;
+	color: #ffe552;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu a:hover {
+	color: #fbae29;
 }
 </style>

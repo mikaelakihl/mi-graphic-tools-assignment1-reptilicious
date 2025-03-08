@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { defineProps, defineEmits } from 'vue';
 
-const menuOpen = ref(false);
+const props = defineProps<{ menuOpen: boolean }>();
+const emit = defineEmits(['toggle-menu']);
 
 const toggleMenu = () => {
-	menuOpen.value = !menuOpen.value;
+	emit('toggle-menu');
 };
 </script>
 
@@ -17,13 +18,6 @@ const toggleMenu = () => {
 		</div>
 		<span class="menu-text" :class="{ hidden: menuOpen }">menu</span>
 	</button>
-	<div class="menu-overlay" :class="{ open: menuOpen }">
-		<nav class="menu">
-			<a href="#">Home</a>
-			<a href="#">Products</a>
-			<a href="#">About Us</a>
-		</nav>
-	</div>
 </template>
 
 <style lang="scss" scoped>
@@ -79,50 +73,5 @@ const toggleMenu = () => {
 	left: 0;
 	transform: rotate(-1deg) translateY(0.1rem);
 	z-index: 1;
-}
-
-/* menu style */
-.menu-overlay {
-	position: fixed;
-	top: 1rem;
-	left: 1rem;
-	right: 1rem;
-	bottom: 1rem;
-	background: #056a55;
-	border-radius: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	transition: transform 0.5s ease-in-out;
-	transform: translateY(-100%);
-	z-index: 10;
-}
-
-/* menu open */
-.menu-overlay.open {
-	transform: translateY(0);
-}
-
-/* menu-links */
-.menu {
-	display: flex;
-	flex-direction: column;
-	gap: 4rem;
-}
-
-.menu a {
-	font-family: 'Spicy Rice', sans-serif;
-	font-size: 3rem;
-	color: #ffe552;
-	text-transform: uppercase;
-	text-decoration: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.menu a:hover {
-	color: #fbae29;
 }
 </style>
