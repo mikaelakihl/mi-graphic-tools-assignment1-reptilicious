@@ -41,11 +41,14 @@ const toggleMenu = () => {
 		<MenuIcon :menuOpen="menuOpen" @toggle-menu="toggleMenu" />
 
 		<div class="menu-overlay" :class="{ open: menuOpen }">
-			<nav class="menu">
-				<a href="#">Home</a>
-				<a href="#">Products</a>
-				<a href="#">About Us</a>
-			</nav>
+			<div class="menu-container">
+				<nav class="menu">
+					<div class="menu-title">menu <span></span></div>
+					<a href="#">Home</a>
+					<a href="#">Products</a>
+					<a href="#">About Us</a>
+				</nav>
+			</div>
 		</div>
 	</header>
 </template>
@@ -68,20 +71,33 @@ const toggleMenu = () => {
 	left: 5%;
 }
 
+.menu-container {
+	background: #056a55;
+	width: 90vw;
+	height: 90vh;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+}
+
 .menu-overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	background: rgba(5, 106, 85, 0.95);
+	backdrop-filter: blur(3px);
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	transition: opacity 0.5s ease-in-out;
-	opacity: 0;
 	visibility: hidden;
+	opacity: 0;
+	transition:
+		opacity 0.4s ease-in-out,
+		visibility 0.4s;
 	z-index: 10;
 }
 
@@ -90,11 +106,32 @@ const toggleMenu = () => {
 	visibility: visible;
 }
 
-/* Links */
+.menu-title {
+	font-family: Inter, sans-serif;
+	font-size: 1.5rem;
+	font-weight: lighter;
+	color: #ffe552;
+	text-transform: lowercase;
+	position: relative;
+	display: inline;
+
+	margin-bottom: 1rem;
+}
+
+.menu-title span {
+	background-color: #fbae29;
+	display: block;
+	width: 7rem;
+	height: 0.4rem;
+	margin-top: 4px;
+}
+
+/* Länkar */
 .menu {
 	display: flex;
 	flex-direction: column;
-	gap: 4rem;
+	gap: 3rem;
+	text-align: center;
 }
 
 .menu a {
@@ -103,9 +140,7 @@ const toggleMenu = () => {
 	color: #ffe552;
 	text-transform: uppercase;
 	text-decoration: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	transition: color 0.3s ease-in-out;
 }
 
 .menu a:hover {
