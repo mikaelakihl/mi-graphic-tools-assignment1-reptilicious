@@ -56,7 +56,7 @@ const toggleMenu = () => {
 <style lang="scss" scoped>
 .header-mobile {
 	width: 100%;
-	padding: 1rem;
+	margin-top: 1rem;
 	display: flex;
 	justify-content: flex-end;
 	background-color: transparent;
@@ -131,7 +131,7 @@ const toggleMenu = () => {
 .menu {
 	display: flex;
 	flex-direction: column;
-	gap: 3rem;
+	gap: 4rem;
 	text-align: center;
 }
 
@@ -141,7 +141,6 @@ const toggleMenu = () => {
 	color: #ffe552;
 	text-transform: uppercase;
 	text-decoration: none;
-	transition: color 0.3s ease-in-out;
 }
 
 .menu a:hover {
