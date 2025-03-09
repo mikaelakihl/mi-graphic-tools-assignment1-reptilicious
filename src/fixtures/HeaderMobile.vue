@@ -44,9 +44,9 @@ const toggleMenu = () => {
 			<div class="menu-container">
 				<nav class="menu">
 					<div class="menu-title">menu <span></span></div>
-					<a href="#">Home</a>
-					<a href="#">Products</a>
-					<a href="#">About Us</a>
+					<RouterLink to="/" @click="toggleMenu">Home</RouterLink>
+					<RouterLink to="/product" @click="toggleMenu">Products</RouterLink>
+					<RouterLink to="/about" @click="toggleMenu">About Us</RouterLink>
 				</nav>
 			</div>
 		</div>
@@ -109,19 +109,20 @@ const toggleMenu = () => {
 .menu-title {
 	font-family: Inter, sans-serif;
 	font-size: 1.5rem;
-	font-weight: lighter;
 	color: #ffe552;
 	text-transform: lowercase;
 	position: relative;
-	display: inline;
-
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	margin-bottom: 1rem;
 }
 
 .menu-title span {
 	background-color: #fbae29;
-	display: block;
-	width: 7rem;
+	display: flex;
+	flex-direction: column;
+	width: 6rem;
 	height: 0.4rem;
 	margin-top: 4px;
 }

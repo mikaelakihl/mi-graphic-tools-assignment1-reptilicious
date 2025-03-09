@@ -6,9 +6,6 @@ import HeaderMobile from '@/fixtures/HeaderMobile.vue';
 
 <template>
 	<HeaderMobile />
-	<RouterLink to="/">Home</RouterLink>
-	<RouterLink to="product">Products</RouterLink>
-	<RouterLink to="about">About</RouterLink>
 
 	<RouterView />
 	<MainFooter />
