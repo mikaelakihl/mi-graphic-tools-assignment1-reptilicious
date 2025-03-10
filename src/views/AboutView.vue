@@ -43,8 +43,6 @@ import SecondaryButton from '../components/atoms/SecondaryButton.vue';
 		</section>
 	</main>
 	<HeaderMobile />
-
-	<h1>About</h1>
 </template>
 
 <style lang="scss" scoped>
