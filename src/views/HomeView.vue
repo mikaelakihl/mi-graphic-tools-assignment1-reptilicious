@@ -8,7 +8,6 @@ const isMobile = ref<boolean>(window.innerWidth <= 768);
 
 function updateWindowResize(): void {
 	isMobile.value = window.innerWidth <= 768;
-	console.log('Är mobil: ' + isMobile.value);
 }
 
 function setupResizeListener(): void {
