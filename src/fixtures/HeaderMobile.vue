@@ -66,10 +66,7 @@ const toggleMenu = () => {
 }
 
 .r-logo {
-	width: 1.91888rem;
-	height: 1.92869rem;
 	margin-top: 1rem;
-	flex-shrink: 0;
 	position: absolute;
 	left: 5%;
 }
@@ -78,8 +75,8 @@ const toggleMenu = () => {
 	background: #056a55;
 	width: 90vw;
 	height: 90vh;
-	border-radius: 20px;
-	display: flex;
+	border-radius: 10px;
+	display: relative;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -113,7 +110,6 @@ const toggleMenu = () => {
 	font-family: Inter, sans-serif;
 	font-size: 1.3rem;
 	color: #ffe552;
-	text-transform: lowercase;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -122,7 +118,7 @@ const toggleMenu = () => {
 
 .menu-title span {
 	background-color: #fbae29;
-	display: flex;
+	display: block;
 	flex-direction: column;
 	width: 5rem;
 	height: 0.4rem;
@@ -133,7 +129,7 @@ const toggleMenu = () => {
 .menu {
 	display: flex;
 	flex-direction: column;
-	gap: 5rem;
+	gap: 6rem;
 	text-align: center;
 }
 
