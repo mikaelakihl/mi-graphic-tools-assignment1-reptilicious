@@ -54,6 +54,7 @@ main {
 		span {
 			font-family: $secondary-font;
 			font-size: $subhead-fontsize;
+			font-weight: $font-weight-medium;
 		}
 	}
 	.content-container {
