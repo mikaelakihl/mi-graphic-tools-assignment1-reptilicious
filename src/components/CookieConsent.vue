@@ -47,7 +47,6 @@ const rejectCookies = () => {
 	background-color: $orange-color;
 	color: $black-color;
 	padding: 20px;
-	text-align: center;
 	font-family: $secondary-font;
 	box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
 	z-index: 3;
@@ -63,10 +62,8 @@ const rejectCookies = () => {
 	top: -20px;
 	left: 0;
 	transform: translateX(-20%);
-	font-family: $primary-font;
-	text-transform: uppercase;
 	color: $white-color;
-	font-size: 2rem;
+	font-size: $h3-fontsize;
 	z-index: 4;
 	padding: 5px 15px;
 	border-radius: 5px;
@@ -106,11 +103,25 @@ button {
 .reject-btn {
 	background-color: $emerald-color;
 	color: white;
+
+	&:hover {
+		background-color: $white-color;
+		color: rgba($emerald-color, 0.9);
+		border: 2px solid $emerald-color;
+		transform: scale(1.1);
+	}
 }
 
 .accept-btn {
 	background-color: $forest-color;
 	color: white;
+
+	&:hover {
+		background-color: $white-color;
+		color: rgba($forest-color, 0.9);
+		border: 2px solid $forest-color;
+		transform: scale(1.1);
+	}
 }
 
 @media (min-width: 768px) {

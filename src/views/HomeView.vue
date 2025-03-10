@@ -1,7 +1,25 @@
 <script setup lang="ts">
+import { onMounted, onUnmounted, ref } from 'vue';
 import TertiaryButton from '../components/atoms/TertiaryButton.vue';
 import ImageCarousel from '../components/carousel/ImageCarousel.vue';
 import SmallCard from '../components/SmallCard.vue';
+
+const isMobile = ref<boolean>(window.innerWidth <= 767);
+
+function updateWindowResize(): void {
+	isMobile.value = window.innerWidth <= 767;
+}
+
+function setupResizeListener(): void {
+	window.addEventListener('resize', updateWindowResize);
+}
+
+function removeResizeListener(): void {
+	window.removeEventListener('resize', updateWindowResize);
+}
+
+onMounted(setupResizeListener);
+onUnmounted(removeResizeListener);
 </script>
 
 <template>
@@ -20,9 +38,17 @@ import SmallCard from '../components/SmallCard.vue';
 			<span>Explore a World of Flavors</span>
 		</section>
 		<div class="content-container">
-			<ImageCarousel />
+			<div class="image-container">
+				<ImageCarousel v-if="isMobile" />
+				<div v-else class="image-displayer">
+					<img src="@/assets/images/krokodil_kobra_blue.jpg" width="256" height="261" loading="lazy" />
+					<img src="@/assets/images/krokodil_kobra_green.jpg" width="256" height="261" loading="lazy" />
+					<!-- TODO: Add alt-texts -->
+					<img src="@/assets/images/krokodil_kobra_red.jpg" width="256" height="261" loading="lazy" />
+					<!-- TODO: Change to ".png" -->
+				</div>
+			</div>
 			<TertiaryButton buttonLabel="All flavors" type="button" @click="$router.push('product')" />
-			<!-- TODO: Add props to change label for button to: "All flavors" -->
 			<SmallCard
 				cardHeader="Reptilicious"
 				cardSubheader="Wildly Delicious"
@@ -33,39 +59,31 @@ import SmallCard from '../components/SmallCard.vue';
 </template>
 
 <style lang="scss" scoped>
-main {
-	max-width: 100vw;
+.heading-one-container {
+	min-width: 100%;
+	background-color: $white-color;
+	text-align: center;
+	padding-top: $small-margin;
+	padding-bottom: $small-margin;
+	h1 {
+		font-size: $h3-fontsize;
+		margin-bottom: 0.5rem;
+		color: $forest-color;
+	}
+	span {
+		font-size: $subhead-fontsize;
+		font-weight: $font-weight-medium;
+		color: $forest-color;
+	}
+}
+.content-container {
+	margin-top: $large-margin;
+	margin-bottom: $large-margin;
+	margin-inline: $small-margin;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	.heading-one-container {
-		min-width: 100%;
-		background-color: $white-color;
-		text-align: center;
-		color: $forest-color;
-		padding-top: $small-margin;
-		padding-bottom: $small-margin;
-		h1 {
-			font-family: $primary-font;
-			font-size: $h3-fontsize;
-			text-transform: uppercase;
-			margin-bottom: 0.5rem;
-		}
-		span {
-			font-family: $secondary-font;
-			font-size: $subhead-fontsize;
-			font-weight: $font-weight-medium;
-		}
-	}
-	.content-container {
-		margin-top: $large-margin;
-		margin-bottom: $large-margin;
-		margin-inline: $small-margin;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: $large-margin;
-	}
+	gap: $large-margin;
 }
 
 @media screen and (min-width: $tablet-size) {
@@ -73,6 +91,41 @@ main {
 		.content-container {
 			margin-inline: $large-margin;
 			margin-bottom: 10rem;
+			position: relative;
+		}
+		.image-container {
+			width: 100%;
+			position: absolute;
+		}
+		.image-displayer {
+			width: 100%;
+			img:first-of-type {
+				position: absolute;
+				top: -8rem;
+				right: -2rem;
+				transform: rotate(35deg);
+				height: 182px;
+				width: auto;
+			}
+			img:nth-of-type(2) {
+				position: absolute;
+				top: -21rem;
+				left: -2rem;
+				transform: rotate(-10deg);
+				height: 182px;
+				width: auto;
+			}
+			img:last-of-type {
+				position: absolute;
+				top: 20rem;
+				left: 2rem;
+				transform: rotate(10deg);
+				height: 182px;
+				width: auto;
+			}
+		}
+		.small-card-article {
+			margin-bottom: 16rem;
 		}
 	}
 }
@@ -81,6 +134,35 @@ main {
 	main {
 		.content-container {
 			max-width: 35vw;
+			img:first-of-type {
+				position: absolute;
+				top: -12rem;
+				right: -17rem;
+				transform: rotate(-12deg);
+				height: 290px;
+				width: auto;
+				z-index: 1;
+			}
+			img:nth-of-type(2) {
+				position: absolute;
+				top: -21rem;
+				left: -25rem;
+				transform: rotate(-10deg);
+				height: 359px;
+				width: auto;
+			}
+			img:last-of-type {
+				position: absolute;
+				top: -20rem;
+				left: auto;
+				right: -27rem;
+				transform: rotate(17deg);
+				height: 290px;
+				width: auto;
+			}
+		}
+		.small-card-article {
+			margin-bottom: 0;
 		}
 	}
 }
