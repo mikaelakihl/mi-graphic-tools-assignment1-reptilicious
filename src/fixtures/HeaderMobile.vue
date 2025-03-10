@@ -45,7 +45,7 @@ const toggleMenu = () => {
 		<div class="menu-overlay" :class="{ open: menuOpen }">
 			<div class="menu-container">
 				<nav class="menu">
-					<div class="menu-title">menu <span></span></div>
+					<div class="menu-title" @click="toggleMenu">close <span></span></div>
 					<RouterLink to="/" @click="toggleMenu">Home</RouterLink>
 					<RouterLink to="/product" @click="toggleMenu">Products</RouterLink>
 					<RouterLink to="/about" @click="toggleMenu">About Us</RouterLink>
@@ -111,21 +111,20 @@ const toggleMenu = () => {
 
 .menu-title {
 	font-family: Inter, sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	color: #ffe552;
 	text-transform: lowercase;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin-bottom: 1rem;
 }
 
 .menu-title span {
 	background-color: #fbae29;
 	display: flex;
 	flex-direction: column;
-	width: 6rem;
+	width: 5rem;
 	height: 0.4rem;
 	margin-top: 4px;
 }
@@ -134,7 +133,7 @@ const toggleMenu = () => {
 .menu {
 	display: flex;
 	flex-direction: column;
-	gap: 4rem;
+	gap: 5rem;
 	text-align: center;
 }
 
