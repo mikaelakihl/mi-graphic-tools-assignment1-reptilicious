@@ -89,8 +89,7 @@ const toggleMenu = () => {
 
 .menu-overlay {
 	position: fixed;
-	top: 0;
-	left: 0;
+	inset: 0;
 	width: 100vw;
 	height: 100vh;
 	backdrop-filter: blur(3px);
