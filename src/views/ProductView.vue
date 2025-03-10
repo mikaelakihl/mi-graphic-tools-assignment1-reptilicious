@@ -42,15 +42,7 @@ import krokodileImageRed from '../assets/images/krokodil_kobra_red.png';
 <style lang="scss" scoped>
 main {
 	margin: 60px $small-margin 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	gap: $small-margin;
-}
-h1 {
-	font-family: $primary-font;
-	font-size: $h1-fontsize;
-	color: $mustard-color;
 }
 
 article {

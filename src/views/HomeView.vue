@@ -59,39 +59,31 @@ onUnmounted(removeResizeListener);
 </template>
 
 <style lang="scss" scoped>
-main {
-	max-width: 100vw;
+.heading-one-container {
+	min-width: 100%;
+	background-color: $white-color;
+	text-align: center;
+	padding-top: $small-margin;
+	padding-bottom: $small-margin;
+	h1 {
+		font-size: $h3-fontsize;
+		margin-bottom: 0.5rem;
+		color: $forest-color;
+	}
+	span {
+		font-size: $subhead-fontsize;
+		font-weight: $font-weight-medium;
+		color: $forest-color;
+	}
+}
+.content-container {
+	margin-top: $large-margin;
+	margin-bottom: $large-margin;
+	margin-inline: $small-margin;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	.heading-one-container {
-		min-width: 100%;
-		background-color: $white-color;
-		text-align: center;
-		color: $forest-color;
-		padding-top: $small-margin;
-		padding-bottom: $small-margin;
-		h1 {
-			font-family: $primary-font;
-			font-size: $h3-fontsize;
-			text-transform: uppercase;
-			margin-bottom: 0.5rem;
-		}
-		span {
-			font-family: $secondary-font;
-			font-size: $subhead-fontsize;
-			font-weight: $font-weight-medium;
-		}
-	}
-	.content-container {
-		margin-top: $large-margin;
-		margin-bottom: $large-margin;
-		margin-inline: $small-margin;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: $large-margin;
-	}
+	gap: $large-margin;
 }
 
 @media screen and (min-width: $tablet-size) {
