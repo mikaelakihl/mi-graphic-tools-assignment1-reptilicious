@@ -72,7 +72,6 @@ article {
 	.product-card-container {
 		flex-direction: unset;
 		flex-wrap: wrap;
-		justify-content: center;
 	}
 
 	.product-card {

@@ -70,7 +70,6 @@ button {
 @media screen and (min-width: $tablet-size) {
 	article {
 		min-width: 335px;
-		min-height: 568px;
 	}
 }
 </style>
