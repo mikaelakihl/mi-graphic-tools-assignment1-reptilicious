@@ -3,7 +3,7 @@
 @use '@/styles/vendor/_normalize.scss' as *;
 
 body {
-	background-image: url(public/images/reptilicious_backgroundimg_phone.jpg);
+	background-image: url(../../public/images/reptilicious_backgroundimg_phone.jpg);
 	background-position: top;
 	background-size: cover;
 	max-width: 100%;
@@ -37,6 +37,6 @@ span {
 
 @media screen and (min-width: $desktop-size) {
 	body {
-		background-image: url(public/images/reptilicious_backgroundimg_desktop.jpg);
+		background-image: url(../../public/images/reptilicious_backgroundimg_desktop.jpg);
 	}
 }
