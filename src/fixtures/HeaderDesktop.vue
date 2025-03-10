@@ -1,20 +1,12 @@
 <script lang="ts" setup>
-import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
-import MenuIcon from '../components/atoms/MenuIcon.vue';
 
 const route = useRoute();
-const isHomePage = computed(() => route.name === 'home');
-
-const menuOpen = ref(false);
-const toggleMenu = () => {
-	menuOpen.value = !menuOpen.value;
-};
 </script>
 
 <template>
-	<header class="header-mobile">
-		<div class="r-logo" v-if="!isHomePage">
+	<header class="header-desktop">
+		<div class="r-logo">
 			<RouterLink to="/">
 				<svg width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
@@ -40,100 +32,43 @@ const toggleMenu = () => {
 			</RouterLink>
 		</div>
 
-		<MenuIcon :menuOpen="menuOpen" @toggle-menu="toggleMenu" :class="{ hidden: menuOpen }" />
-
-		<div class="menu-overlay" :class="{ open: menuOpen }">
-			<div class="menu-container">
-				<nav class="menu">
-					<div class="menu-title" @click="toggleMenu">close <span></span></div>
-					<RouterLink to="/" @click="toggleMenu">Home</RouterLink>
-					<RouterLink to="/product" @click="toggleMenu">Products</RouterLink>
-					<RouterLink to="/about" @click="toggleMenu">About Us</RouterLink>
-				</nav>
-			</div>
+		<div class="menu-container">
+			<nav class="menu">
+				<RouterLink to="/">Home</RouterLink>
+				<RouterLink to="/product">Products</RouterLink>
+				<RouterLink to="/about">About Us</RouterLink>
+			</nav>
 		</div>
 	</header>
 </template>
 
 <style lang="scss" scoped>
-.header-mobile {
+.header-desktop {
 	width: 100%;
-	margin-top: 1rem;
-	display: flex;
-	justify-content: flex-end;
-	background-color: transparent;
+	height: 10vh;
+	background-color: #093e2e;
 	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
 }
 
 .r-logo {
-	margin-top: 1rem;
-	position: absolute;
-	left: 5%;
-}
-
-.hidden {
-	display: none;
+	margin-top: 0.5rem;
+	position: static;
+	margin-left: 2rem;
 }
 
 .menu-container {
-	background: #056a55;
-	width: 90vw;
-	height: 90vh;
-	border-radius: 10px;
-	display: relative;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 2rem;
-}
-
-.menu-overlay {
-	position: fixed;
-	inset: 0;
-	width: 100vw;
-	height: 100vh;
-	backdrop-filter: blur(3px);
+	flex-grow: 1;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	visibility: hidden;
-	opacity: 0;
-	transition:
-		opacity 0.4s ease-in-out,
-		visibility 0.4s;
-	z-index: 10;
-}
-
-.menu-overlay.open {
-	opacity: 1;
-	visibility: visible;
-}
-
-.menu-title {
-	font-family: Inter, sans-serif;
-	font-size: 1.3rem;
-	color: #ffe552;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	cursor: pointer;
-}
-
-.menu-title span {
-	background-color: #fbae29;
-	display: block;
-	flex-direction: column;
-	width: 5rem;
-	height: 0.4rem;
-	margin-top: 4px;
 }
 
 .menu {
 	display: flex;
-	flex-direction: column;
 	gap: 6rem;
-	text-align: center;
 }
 
 .menu a {
@@ -146,5 +81,10 @@ const toggleMenu = () => {
 
 .menu a:hover {
 	color: #fbae29;
+}
+
+.router-link-active {
+	color: aquamarine !important;
+	text-decoration: underline;
 }
 </style>
