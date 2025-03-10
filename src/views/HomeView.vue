@@ -4,10 +4,10 @@ import TertiaryButton from '../components/atoms/TertiaryButton.vue';
 import ImageCarousel from '../components/carousel/ImageCarousel.vue';
 import SmallCard from '../components/SmallCard.vue';
 
-const isMobile = ref<boolean>(window.innerWidth <= 768);
+const isMobile = ref<boolean>(window.innerWidth <= 767);
 
 function updateWindowResize(): void {
-	isMobile.value = window.innerWidth <= 768;
+	isMobile.value = window.innerWidth <= 767;
 }
 
 function setupResizeListener(): void {
