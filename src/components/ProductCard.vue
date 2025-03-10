@@ -66,10 +66,4 @@ span {
 button {
 	width: 60%;
 }
-
-@media screen and (min-width: $tablet-size) {
-	article {
-		min-width: 335px;
-	}
-}
 </style>
