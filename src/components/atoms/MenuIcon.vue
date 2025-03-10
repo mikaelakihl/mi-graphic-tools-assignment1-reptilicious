@@ -10,7 +10,7 @@ const toggleMenu = () => {
 </script>
 
 <template>
-	<button class="menu-icon" @click="toggleMenu">
+	<button class="menu-icon" @click="toggleMenu" aria-label="Open menu">
 		<div class="lines">
 			<span class="line top-line" :class="{ open: menuOpen }"></span>
 			<span class="line middle-line" :class="{ open: menuOpen }"></span>
