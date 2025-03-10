@@ -75,7 +75,7 @@ const rejectCookies = () => {
 
 p {
 	font-size: 14px;
-	margin-bottom: 15px;
+	margin: 10px;
 	max-width: 90%;
 }
 
