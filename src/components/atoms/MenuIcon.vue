@@ -11,11 +11,11 @@ const toggleMenu = () => {
 
 <template>
 	<button class="menu-icon" @click="toggleMenu" aria-label="Open menu">
-		<div class="lines">
+		<span class="lines">
 			<span class="line top-line" :class="{ open: menuOpen }"></span>
 			<span class="line middle-line" :class="{ open: menuOpen }"></span>
 			<span class="line bottom-line" :class="{ open: menuOpen }"></span>
-		</div>
+		</span>
 		<span class="menu-text" :class="{ hidden: menuOpen }">menu</span>
 	</button>
 </template>
@@ -32,6 +32,10 @@ const toggleMenu = () => {
 	background: none;
 	cursor: pointer;
 	padding: 0;
+}
+
+.lines {
+	display: block;
 }
 
 .line {
