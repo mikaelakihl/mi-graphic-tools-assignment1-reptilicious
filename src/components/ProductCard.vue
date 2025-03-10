@@ -60,6 +60,7 @@ p {
 
 span {
 	font-size: $subhead-fontsize;
+	font-weight: $font-weight-medium;
 }
 
 button {
