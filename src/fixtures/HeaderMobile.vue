@@ -40,7 +40,7 @@ const toggleMenu = () => {
 			</RouterLink>
 		</div>
 
-		<MenuIcon :menuOpen="menuOpen" @toggle-menu="toggleMenu" />
+		<MenuIcon :menuOpen="menuOpen" @toggle-menu="toggleMenu" :class="{ hidden: menuOpen }" />
 
 		<div class="menu-overlay" :class="{ open: menuOpen }">
 			<div class="menu-container">
@@ -69,6 +69,10 @@ const toggleMenu = () => {
 	margin-top: 1rem;
 	position: absolute;
 	left: 5%;
+}
+
+.hidden {
+	display: none;
 }
 
 .menu-container {
