@@ -54,7 +54,7 @@ main {
 	gap: $medium-margin;
 	margin: $small-margin;
 	align-items: center;
-	margin-bottom: $large-margin;
+	margin-bottom: 0;
 	h1 {
 		font-family: $primary-font;
 		font-size: $h2-fontsize;
@@ -66,6 +66,7 @@ main {
 		display: flex;
 		flex-direction: column;
 		gap: $small-margin;
+		margin-bottom: 10rem;
 	}
 	.contact-us-container {
 		min-width: 100%;
@@ -73,6 +74,7 @@ main {
 		flex-direction: column;
 		align-items: center;
 		gap: $small-margin;
+		margin-bottom: 10rem;
 		h2 {
 			font-family: $primary-font;
 			font-size: $h2-fontsize;
