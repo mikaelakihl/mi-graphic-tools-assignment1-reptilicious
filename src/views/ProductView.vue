@@ -41,7 +41,7 @@ import krokodileImageRed from '../assets/images/krokodil_kobra_red.png';
 
 <style lang="scss" scoped>
 main {
-	margin: 60px $small-margin;
+	margin: 60px $small-margin 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -57,9 +57,14 @@ article {
 	min-width: 100%;
 }
 
+article:last-of-type {
+	margin-bottom: $large-margin;
+}
+
 @media screen and (min-width: $tablet-size) {
 	main {
 		margin: $large-margin;
+		margin-bottom: 0;
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
 		column-gap: $small-margin;
@@ -75,10 +80,15 @@ article {
 	.product-card {
 		grid-column: span 3;
 	}
+	article:last-of-type {
+		margin-bottom: 10rem;
+	}
 }
 
 @media screen and (min-width: $desktop-size) {
 	main {
+		margin-left: 120px;
+		margin-right: 120px;
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		column-gap: $large-margin;
@@ -89,11 +99,15 @@ article {
 	}
 
 	.small-card {
+		margin-bottom: $small-margin;
 		grid-column: span 12;
 	}
 
 	.product-card {
 		grid-column: span 4;
+	}
+	article:last-of-type {
+		margin-bottom: 0;
 	}
 }
 </style>
