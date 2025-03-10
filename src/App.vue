@@ -1,16 +1,15 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router';
+import { RouterView } from 'vue-router';
 import MainFooter from '@/fixtures/MainFooter.vue';
 import HeaderMobile from '@/fixtures/HeaderMobile.vue';
+import CookieConsent from './components/CookieConsent.vue';
 </script>
 
 <template>
 	<HeaderMobile />
-	<RouterLink to="/">Home</RouterLink>
-	<RouterLink to="product">Products</RouterLink>
-	<RouterLink to="about">About</RouterLink>
 
 	<RouterView />
+	<CookieConsent />
 	<MainFooter />
 </template>
 

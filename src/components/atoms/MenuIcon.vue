@@ -1,13 +1,22 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { defineProps, defineEmits } from 'vue';
+
+const props = defineProps<{ menuOpen: boolean }>();
+const emit = defineEmits(['toggle-menu']);
+
+const toggleMenu = () => {
+	emit('toggle-menu');
+};
+</script>
 
 <template>
-	<button class="menu-icon">
+	<button class="menu-icon" @click="toggleMenu">
 		<div class="lines">
-			<span class="line top-line"></span>
-			<span class="line middle-line"></span>
-			<span class="line bottom-line"></span>
+			<span class="line top-line" :class="{ open: menuOpen }"></span>
+			<span class="line middle-line" :class="{ open: menuOpen }"></span>
+			<span class="line bottom-line" :class="{ open: menuOpen }"></span>
 		</div>
-		<span class="menu-text">menu</span>
+		<span class="menu-text" :class="{ hidden: menuOpen }">menu</span>
 	</button>
 </template>
 
@@ -57,7 +66,7 @@
 
 .menu-text {
 	font-size: 0.97rem;
-	font-weight: 400;
+	font-weight: lighter;
 	color: #ffe552;
 	position: absolute;
 	top: 20%;
