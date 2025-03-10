@@ -40,7 +40,14 @@ onUnmounted(removeResizeListener);
 			<span>Explore a World of Flavors</span>
 		</section>
 		<div class="content-container">
-			<ImageCarousel />
+			<div class="image-container">
+				<ImageCarousel v-if="isMobile" />
+				<div v-else class="image-displayer">
+					<img src="@/assets/images/krokodil_kobra_blue.jpg" width="256" height="261" loading="lazy">
+					<img src="@/assets/images/krokodil_kobra_green.jpg" width="256" height="261" loading="lazy">
+					<img src="@/assets/images/krokodil_kobra_red.jpg" width="256" height="261" loading="lazy"> <!-- TODO: Change to ".png" -->
+				</div>
+			</div>
 			<TertiaryButton buttonLabel="All flavors" type="button" @click="$router.push('product')" />
 			<!-- TODO: Add props to change label for button to: "All flavors" -->
 			<SmallCard
