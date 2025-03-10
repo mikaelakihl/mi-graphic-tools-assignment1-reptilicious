@@ -1,7 +1,27 @@
 <script setup lang="ts">
+import { onMounted, onUnmounted, ref } from 'vue';
 import TertiaryButton from '../components/atoms/TertiaryButton.vue';
 import ImageCarousel from '../components/carousel/ImageCarousel.vue';
 import SmallCard from '../components/SmallCard.vue';
+
+const isMobile = ref<boolean>(window.innerWidth <= 768);
+
+function updateWindowResize(): void {
+	isMobile.value = window.innerWidth <= 768;
+	console.log('Är mobil: ' + isMobile.value);
+}
+
+function setupResizeListener(): void {
+	window.addEventListener('resize', updateWindowResize);
+}
+
+function removeResizeListener(): void {
+	window.removeEventListener('resize', updateWindowResize);
+}
+
+onMounted(setupResizeListener);
+onUnmounted(removeResizeListener);
+
 </script>
 
 <template>
