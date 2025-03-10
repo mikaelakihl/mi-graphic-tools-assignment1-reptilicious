@@ -26,12 +26,9 @@ article {
 	padding: $small-margin;
 	filter: drop-shadow(rgba(0, 0, 0, 0.25) -4px 4px 4px);
 	h2 {
-		font-family: $primary-font;
 		font-size: $h3-fontsize;
-		text-transform: uppercase;
 	}
 	.subheading {
-		font-family: $secondary-font;
 		font-size: $subhead-fontsize;
 		font-weight: $font-weight-medium;
 	}

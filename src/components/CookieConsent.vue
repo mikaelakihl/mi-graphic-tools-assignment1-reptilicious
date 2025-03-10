@@ -62,10 +62,8 @@ const rejectCookies = () => {
 	top: -20px;
 	left: 0;
 	transform: translateX(-20%);
-	font-family: $primary-font;
-	text-transform: uppercase;
 	color: $white-color;
-	font-size: 2rem;
+	font-size: $h3-fontsize;
 	z-index: 4;
 	padding: 5px 15px;
 	border-radius: 5px;

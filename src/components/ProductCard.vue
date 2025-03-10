@@ -46,10 +46,8 @@ img {
 }
 
 h2 {
-	font-family: $primary-font;
 	font-size: $h3-fontsize;
 	color: $forest-color;
-	text-transform: uppercase;
 }
 
 span,

@@ -47,19 +47,10 @@ import SecondaryButton from '../components/atoms/SecondaryButton.vue';
 <style lang="scss" scoped>
 // Keep main and h1 in scoped CSS, move the rest to main.scss
 main {
-	max-width: 100vw;
-	display: flex;
-	flex-direction: column;
 	gap: $medium-margin;
 	margin: $small-margin;
-	align-items: center;
 	margin-bottom: 0;
-	h1 {
-		font-family: $primary-font;
-		font-size: $h2-fontsize;
-		text-transform: uppercase;
-		color: $mustard-color;
-	}
+
 	// ----- Keep above -------------------
 	.about-content-container {
 		display: flex;
@@ -75,9 +66,7 @@ main {
 		gap: $small-margin;
 		margin-bottom: 10rem;
 		h2 {
-			font-family: $primary-font;
 			font-size: $h2-fontsize;
-			text-transform: uppercase;
 			color: $mustard-color;
 		}
 	}
