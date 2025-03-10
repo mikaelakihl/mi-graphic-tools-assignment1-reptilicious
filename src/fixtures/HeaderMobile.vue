@@ -117,6 +117,7 @@ const toggleMenu = () => {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	cursor: pointer;
 }
 
 .menu-title span {
