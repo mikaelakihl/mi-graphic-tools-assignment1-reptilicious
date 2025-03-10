@@ -97,9 +97,7 @@ article:last-of-type {
 
 	.product-card {
 		grid-column: span 4;
-	}
-	article:last-of-type {
-		margin-bottom: 0;
+		margin-bottom: 10rem;
 	}
 }
 </style>
