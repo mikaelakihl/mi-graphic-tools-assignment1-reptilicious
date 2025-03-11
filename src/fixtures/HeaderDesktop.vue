@@ -46,7 +46,7 @@ const route = useRoute();
 .header-desktop {
 	width: 100%;
 	height: 10vh;
-	background-color: #093e2e;
+	background-color: $emerald-color;
 	top: 0;
 	display: flex;
 	align-items: center;
@@ -72,19 +72,18 @@ const route = useRoute();
 }
 
 .menu a {
-	font-family: 'Spicy Rice', sans-serif;
-	font-size: 3rem;
-	color: #ffe552;
+	font-family: $primary-font;
+	font-size: $h1-fontsize;
+	color: $mustard-color;
 	text-transform: uppercase;
 	text-decoration: none;
 }
 
 .menu a:hover {
-	color: #fbae29;
+	color: $orange-color;
 }
 
 .router-link-active {
-	color: aquamarine !important;
-	text-decoration: underline;
+	color: $aged-copper-color !important;
 }
 </style>
