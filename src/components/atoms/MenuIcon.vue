@@ -8,12 +8,12 @@ const toggleMenu = () => {
 </script>
 
 <template>
-	<button class="menu-icon" @click="toggleMenu">
-		<div class="lines">
+	<button class="menu-icon" @click="toggleMenu" aria-label="Open menu">
+		<span class="lines">
 			<span class="line top-line" :class="{ open: menuOpen }"></span>
 			<span class="line middle-line" :class="{ open: menuOpen }"></span>
 			<span class="line bottom-line" :class="{ open: menuOpen }"></span>
-		</div>
+		</span>
 		<span class="menu-text" :class="{ hidden: menuOpen }">menu</span>
 	</button>
 </template>
@@ -32,6 +32,10 @@ const toggleMenu = () => {
 	padding: 0;
 }
 
+.lines {
+	display: block;
+}
+
 .line {
 	position: absolute;
 	max-width: 4rem;
@@ -41,14 +45,14 @@ const toggleMenu = () => {
 }
 
 .top-line {
-	background-color: #ffe552;
+	background-color: $mustard-color;
 	width: 3.8rem;
 	top: 42%;
 	transform: rotate(7deg) translateY(-1rem);
 }
 
 .middle-line {
-	background-color: #fbae29;
+	background-color: $orange-color;
 	width: 3.9rem;
 	top: 45%;
 	transform: rotate(-5deg) translateY(0.2rem);
@@ -56,16 +60,16 @@ const toggleMenu = () => {
 }
 
 .bottom-line {
-	background-color: #ffe552;
+	background-color: $mustard-color;
 	width: 100%;
 	top: 52%;
 	transform: rotate(2deg) translateY(1rem);
 }
 
 .menu-text {
-	font-size: 0.97rem;
+	font-size: $h4-fontsize;
 	font-weight: lighter;
-	color: #ffe552;
+	color: $mustard-color;
 	position: absolute;
 	top: 20%;
 	left: 0;
