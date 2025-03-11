@@ -41,8 +41,12 @@ import krokodileImageRed from '../assets/images/krokodil_kobra_red.png';
 
 <style lang="scss" scoped>
 main {
-	margin: 60px $small-margin 0;
+	margin: $large-margin $small-margin 0;
 	gap: $small-margin;
+}
+
+.small-card {
+	margin: $small-margin 0;
 }
 
 article {

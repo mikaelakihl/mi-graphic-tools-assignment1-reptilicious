@@ -48,8 +48,7 @@ import SecondaryButton from '../components/atoms/SecondaryButton.vue';
 // Keep main and h1 in scoped CSS, move the rest to main.scss
 main {
 	gap: $medium-margin;
-	margin: $small-margin;
-	margin-bottom: 0;
+	margin: $large-margin $small-margin 0;
 
 	// ----- Keep above -------------------
 	.about-content-container {
