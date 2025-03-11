@@ -57,7 +57,9 @@ const toggleMenu = () => {
 
 <style lang="scss" scoped>
 .header-mobile {
+	position: fixed;
 	width: 100%;
+	height: 60px;
 	margin-top: 1rem;
 	display: flex;
 	justify-content: flex-end;
@@ -72,7 +74,7 @@ const toggleMenu = () => {
 }
 
 .hidden {
-	display: none;
+	visibility: hidden;
 }
 
 .menu-container {
