@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const props = defineProps<{ menuOpen: boolean }>();
 const emit = defineEmits(['toggle-menu']);
 
