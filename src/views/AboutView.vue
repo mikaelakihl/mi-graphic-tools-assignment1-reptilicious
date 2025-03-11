@@ -135,8 +135,6 @@ main {
 		column-gap: $small-margin;
 		margin-inline: $small-margin;
 		h1 {
-			grid-column: span 12;
-			text-align: center;
 			visibility: hidden; // TODO: Alternativt display: none om den istället ska finnas i headern
 		}
 		.about-content-container {
