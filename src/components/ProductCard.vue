@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { defineProps } from 'vue';
 import PrimaryButton from '../components/atoms/PrimaryButton.vue';
 
 const props = defineProps<{

@@ -7,7 +7,6 @@ import CookieConsent from './components/CookieConsent.vue';
 
 <template>
 	<HeaderMobile />
-
 	<RouterView />
 	<CookieConsent />
 	<MainFooter />

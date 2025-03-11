@@ -1,9 +1,3 @@
-<template>
-	<div class="carousel-dots">
-		<span v-for="index in total" :key="index" :class="['dot', { active: index - 1 === current }]"></span>
-	</div>
-</template>
-
 <script setup lang="ts">
 defineProps<{
 	current: number;
@@ -11,9 +5,13 @@ defineProps<{
 }>();
 </script>
 
-<style lang="scss" scoped>
-@use '@/styles/variables' as *;
+<template>
+	<div class="carousel-dots">
+		<span v-for="index in total" :key="index" :class="['dot', { active: index - 1 === current }]"></span>
+	</div>
+</template>
 
+<style lang="scss" scoped>
 .carousel-dots {
 	display: flex;
 	justify-content: center;
