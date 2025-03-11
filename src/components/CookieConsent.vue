@@ -73,6 +73,7 @@ const rejectCookies = () => {
 p {
 	margin: 10px;
 	max-width: 90%;
+	font-size: $body-fontsize;
 }
 
 .cookie-policy {
@@ -94,9 +95,9 @@ button {
 	border: none;
 	border-radius: 25px;
 	cursor: pointer;
-	font-weight: bold;
 	width: 275px;
 	height: 35px;
+	font-family: $secondary-font;
 }
 
 .reject-btn {
