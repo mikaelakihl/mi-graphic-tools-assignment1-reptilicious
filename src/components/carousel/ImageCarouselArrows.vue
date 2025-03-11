@@ -1,17 +1,16 @@
-<template>
-	<button :class="['carousel-arrow', direction]" @click="$emit('click')">
-		{{ direction === 'left' ? '←' : '→' }}
-	</button>
-</template>
-
 <script setup lang="ts">
 defineProps<{
 	direction: 'left' | 'right';
 }>();
 </script>
 
+<template>
+	<button :class="['carousel-arrow', direction]" @click="$emit('click')">
+		{{ direction === 'left' ? '←' : '→' }}
+	</button>
+</template>
+
 <style lang="scss" scoped>
-@use '@/styles/variables' as *;
 
 .carousel-arrow {
 	position: absolute;
