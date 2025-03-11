@@ -87,7 +87,7 @@ article:last-of-type {
 	}
 
 	h1 {
-		grid-column: span 12;
+		visibility: hidden; //TODO: Alternativt display: none om den istället ska finnas i headern
 	}
 
 	.small-card {
