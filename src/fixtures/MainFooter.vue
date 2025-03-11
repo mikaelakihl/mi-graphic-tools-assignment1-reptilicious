@@ -157,7 +157,7 @@ a:hover {
 	border-radius: 3px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet-size) {
 	footer {
 		display: flex;
 		flex-direction: column;
