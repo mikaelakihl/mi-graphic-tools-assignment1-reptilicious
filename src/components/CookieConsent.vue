@@ -31,7 +31,7 @@ const rejectCookies = () => {
 			This website utilises technologies such as cookies to enable essential site functionality, as well as for
 			analytics, personalisation, and targeted advertising purposes. You may change your setting at any time or accept
 			the default settings.
-			<a href="https://commission.europa.eu/cookies-policy_en" class="cookie-policy">Cookie Policy</a>.
+			<a href="#" class="cookie-policy">Cookie Policy</a>.
 		</p>
 		<div class="button-container">
 			<button class="reject-btn" @click="rejectCookies">Reject All</button>
@@ -71,7 +71,6 @@ const rejectCookies = () => {
 }
 
 p {
-	font-size: 14px;
 	margin: 10px;
 	max-width: 90%;
 }
