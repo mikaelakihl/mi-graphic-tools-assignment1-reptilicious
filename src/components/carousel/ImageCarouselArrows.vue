@@ -11,7 +11,6 @@ defineProps<{
 </template>
 
 <style lang="scss" scoped>
-
 .carousel-arrow {
 	position: absolute;
 	top: 50%;
