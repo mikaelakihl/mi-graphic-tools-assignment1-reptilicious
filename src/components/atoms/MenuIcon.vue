@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const props = defineProps<{ menuOpen: boolean }>();
 const emit = defineEmits(['toggle-menu']);
 
@@ -68,7 +67,7 @@ const toggleMenu = () => {
 }
 
 .menu-text {
-	font-size: $h4-fontsize;
+	font-size: 1rem;
 	font-weight: lighter;
 	color: $mustard-color;
 	position: absolute;
