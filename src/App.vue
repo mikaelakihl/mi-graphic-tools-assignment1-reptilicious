@@ -6,10 +6,10 @@ import HeaderMobile from '@/fixtures/HeaderMobile.vue';
 import HeaderDesktop from '@/fixtures/HeaderDesktop.vue';
 import CookieConsent from './components/CookieConsent.vue';
 
-const isMobileOrTablet = ref(window.innerWidth < 1024);
+const isMobileOrTablet = ref(window.innerWidth < 1280);
 
 const checkScreenSize = () => {
-	isMobileOrTablet.value = window.innerWidth < 1024;
+	isMobileOrTablet.value = window.innerWidth < 1280;
 };
 
 onMounted(() => {

@@ -76,15 +76,15 @@ const toggleMenu = () => {
 }
 
 .menu-container {
-	background: #056a55;
+	background: $emerald-color;
 	width: 90vw;
 	height: 90vh;
-	border-radius: 10px;
+	border-radius: $large-card-border-radius;
 	display: relative;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 2rem;
+	padding: $medium-margin;
 }
 
 .menu-overlay {
@@ -110,9 +110,9 @@ const toggleMenu = () => {
 }
 
 .menu-title {
-	font-family: Inter, sans-serif;
-	font-size: 1.3rem;
-	color: #ffe552;
+	font-family: $secondary-font;
+	font-size: $h4-fontsize;
+	color: $mustard-color;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -121,7 +121,7 @@ const toggleMenu = () => {
 }
 
 .menu-title span {
-	background-color: #fbae29;
+	background-color: $orange-color;
 	display: block;
 	flex-direction: column;
 	width: 5rem;
@@ -137,14 +137,14 @@ const toggleMenu = () => {
 }
 
 .menu a {
-	font-family: 'Spicy Rice', sans-serif;
-	font-size: 3rem;
-	color: #ffe552;
+	font-family: $primary-font;
+	font-size: $h1-fontsize;
+	color: $mustard-color;
 	text-transform: uppercase;
 	text-decoration: none;
 }
 
 .menu a:hover {
-	color: #fbae29;
+	color: $orange-color;
 }
 </style>
