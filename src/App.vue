@@ -26,7 +26,6 @@ onUnmounted(() => {
 		<HeaderMobile v-if="isMobileOrTablet" />
 		<HeaderDesktop v-else />
 	</div>
-
 	<RouterView />
 	<CookieConsent />
 	<MainFooter />

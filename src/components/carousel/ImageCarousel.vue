@@ -1,27 +1,3 @@
-<template>
-	<div class="carousel">
-		<div class="carousel-inner">
-			<ImageCarouselArrows direction="left" @click="prevImage" />
-
-			<div class="carousel-images">
-				<img
-					v-for="(image, index) in images"
-					:key="index"
-					:src="image"
-					:class="[
-						'carousel-image',
-						{ left: index === leftIndex, center: index === currentIndex, right: index === rightIndex },
-					]"
-					alt="Carousel image"
-				/>
-			</div>
-
-			<ImageCarouselArrows direction="right" @click="nextImage" class="carousel-arrow right" />
-		</div>
-		<ImageCarouselDots :current="currentIndex" :total="images.length" />
-	</div>
-</template>
-
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import ImageCarouselArrows from './ImageCarouselArrows.vue';
@@ -67,6 +43,30 @@ function prevImage() {
 	}, 500);
 }
 </script>
+
+<template>
+	<div class="carousel">
+		<div class="carousel-inner">
+			<ImageCarouselArrows direction="left" @click="prevImage" />
+
+			<div class="carousel-images">
+				<img
+					v-for="(image, index) in images"
+					:key="index"
+					:src="image"
+					:class="[
+						'carousel-image',
+						{ left: index === leftIndex, center: index === currentIndex, right: index === rightIndex },
+					]"
+					alt="Carousel image"
+				/>
+			</div>
+
+			<ImageCarouselArrows direction="right" @click="nextImage" class="carousel-arrow right" />
+		</div>
+		<ImageCarouselDots :current="currentIndex" :total="images.length" />
+	</div>
+</template>
 
 <style lang="scss" scoped>
 .carousel {
