@@ -46,7 +46,7 @@ const route = useRoute();
 .header-desktop {
 	width: 100%;
 	height: 10vh;
-	background-color: $emerald-color;
+	background-color: $forest-color;
 	top: 0;
 	display: flex;
 	align-items: center;
