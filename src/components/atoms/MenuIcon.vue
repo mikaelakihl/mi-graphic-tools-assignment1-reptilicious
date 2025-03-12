@@ -22,7 +22,7 @@ const toggleMenu = () => {
 .menu-icon {
 	position: relative;
 	width: 4.8rem;
-	height: 3.5rem;
+	min-height: 3.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -39,7 +39,7 @@ const toggleMenu = () => {
 .line {
 	position: absolute;
 	max-width: 4rem;
-	height: 0.4rem;
+	min-height: 0.4rem;
 	display: block;
 	left: 0;
 }

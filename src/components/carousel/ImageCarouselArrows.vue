@@ -47,7 +47,7 @@ defineProps<{
 
 @media (max-width: 450px) {
 	.carousel-images {
-		height: 35vh;
+		min-height: 35vh;
 	}
 
 	.carousel-arrow {
