@@ -13,7 +13,7 @@ const props = defineProps<{
 <template>
 	<article class="product-card">
 		<div class="img-container">
-			<img :src="imgSrc" :alt="imgAlt" width="256" height="261" />
+			<img :src="imgSrc" :alt="imgAlt" width="256" height="261" loading="lazy" />
 		</div>
 		<h2>{{ cardHeader }}</h2>
 		<span>{{ cardSubheader }}</span>
