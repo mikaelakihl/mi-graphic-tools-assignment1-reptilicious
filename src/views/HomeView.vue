@@ -41,10 +41,27 @@ onUnmounted(removeResizeListener);
 			<div class="image-container">
 				<ImageCarousel v-if="isMobile" />
 				<div v-else class="image-displayer">
-					<img src="@/assets/images/krokodil_kobra_blue.jpg" width="256" height="261" loading="lazy" />
-					<img src="@/assets/images/krokodil_kobra_green.jpg" width="256" height="261" loading="lazy" />
-					<!-- TODO: Add alt-texts -->
-					<img src="@/assets/images/krokodil_kobra_red.jpg" width="256" height="261" loading="lazy" />
+					<img
+						src="@/assets/images/krokodil_kobra_blue.jpg"
+						width="256"
+						height="261"
+						loading="lazy"
+						alt="A predominantly blue candy bag labeled 'Reptilicious – Wildly Tasty!' featuring cartoon snakes and crocodiles surrounded by gummy candies."
+					/>
+					<img
+						src="@/assets/images/krokodil_kobra_green.jpg"
+						width="256"
+						height="261"
+						loading="lazy"
+						alt="A predominantly green candy bag labeled 'Reptilicious – Wildly Tasty!' featuring cartoon snakes and crocodiles surrounded by gummy candies."
+					/>
+					<img
+						src="@/assets/images/krokodil_kobra_red.jpg"
+						width="256"
+						height="261"
+						loading="lazy"
+						alt="A predominantly red candy bag labeled 'Reptilicious – Wildly Tasty!' featuring cartoon snakes and crocodiles surrounded by gummy candies."
+					/>
 					<!-- TODO: Change to ".png" -->
 				</div>
 			</div>
