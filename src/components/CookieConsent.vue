@@ -26,7 +26,7 @@ const rejectCookies = () => {
 
 <template>
 	<div v-if="showBanner" class="cookie-banner">
-		<h2 class="cookie-title">COOKIES</h2>
+		<h2 class="cookie-title">Cookies</h2>
 		<p>
 			This website utilises technologies such as cookies to enable essential site functionality, as well as for
 			analytics, personalisation, and targeted advertising purposes. You may change your setting at any time or accept
@@ -41,6 +41,9 @@ const rejectCookies = () => {
 </template>
 
 <style lang="scss" scoped>
+h2 {
+	text-transform: uppercase;
+}
 .cookie-banner {
 	position: fixed;
 	bottom: 0;
