@@ -45,12 +45,9 @@ import SecondaryButton from '../components/atoms/SecondaryButton.vue';
 </template>
 
 <style lang="scss" scoped>
-// Keep main and h1 in scoped CSS, move the rest to main.scss
 main {
 	gap: $medium-margin;
 	margin: $large-margin $small-margin 0;
-
-	// ----- Keep above -------------------
 	.about-content-container {
 		display: flex;
 		flex-direction: column;
@@ -122,7 +119,6 @@ main {
 		}
 		.contact-us-container {
 			grid-column: span 3;
-			// height: 100%;
 		}
 	}
 }
@@ -134,7 +130,7 @@ main {
 		column-gap: $small-margin;
 		margin-inline: $small-margin;
 		h1 {
-			visibility: hidden; // TODO: Alternativt display: none om den istället ska finnas i headern
+			visibility: hidden;
 		}
 		.about-content-container {
 			grid-column: 3 / span 3;
