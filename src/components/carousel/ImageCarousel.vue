@@ -86,7 +86,7 @@ function prevImage() {
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	height: 50vw;
+	min-height: 50vw;
 	width: 100%;
 	min-width: 250px;
 }
@@ -94,7 +94,7 @@ function prevImage() {
 /* img */
 .carousel-image {
 	width: 80%;
-	height: auto;
+	min-height: auto;
 	border-radius: 8px;
 	transition:
 		transform 0.5s ease,

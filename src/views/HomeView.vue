@@ -104,24 +104,24 @@ onUnmounted(removeResizeListener);
 				top: -8rem;
 				right: -2rem;
 				transform: rotate(35deg);
-				height: 182px;
-				width: auto;
+				width: 182px;
+				height: auto;
 			}
 			img:nth-of-type(2) {
 				position: absolute;
 				top: -21rem;
 				left: -2rem;
 				transform: rotate(-10deg);
-				height: 182px;
-				width: auto;
+				width: 182px;
+				height: auto;
 			}
 			img:last-of-type {
 				position: absolute;
 				top: 20rem;
 				left: 2rem;
 				transform: rotate(10deg);
-				height: 182px;
-				width: auto;
+				width: 182px;
+				height: auto;
 			}
 		}
 		.small-card-article {
@@ -139,8 +139,8 @@ onUnmounted(removeResizeListener);
 				top: -12rem;
 				right: -17rem;
 				transform: rotate(-12deg);
-				height: 290px;
-				width: auto;
+				width: 290px;
+				height: auto;
 				z-index: 1;
 			}
 			img:nth-of-type(2) {
@@ -148,8 +148,8 @@ onUnmounted(removeResizeListener);
 				top: -21rem;
 				left: -25rem;
 				transform: rotate(-10deg);
-				height: 359px;
-				width: auto;
+				width: 359px;
+				height: auto;
 			}
 			img:last-of-type {
 				position: absolute;
@@ -157,8 +157,8 @@ onUnmounted(removeResizeListener);
 				left: auto;
 				right: -27rem;
 				transform: rotate(17deg);
-				height: 290px;
-				width: auto;
+				width: 290px;
+				height: auto;
 			}
 		}
 		.small-card-article {

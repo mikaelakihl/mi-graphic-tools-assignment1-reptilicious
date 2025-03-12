@@ -125,9 +125,9 @@ span {
 	display: flex;
 
 	justify-content: space-around;
-	height: 100%;
+	min-height: 100%;
 	svg {
-		height: 100%;
+		min-height: 100%;
 		width: auto;
 	}
 	svg:hover path {
@@ -152,7 +152,7 @@ a:hover {
 
 .edge-line {
 	display: block;
-	height: 6px;
+	min-height: 6px;
 	background-color: $mustard-color;
 	border-radius: 3px;
 }
@@ -174,7 +174,7 @@ a:hover {
 		justify-content: center;
 		align-items: center;
 		.follow-us-span {
-			height: auto;
+			min-height: auto;
 			padding-bottom: $medium-margin;
 		}
 
@@ -195,7 +195,7 @@ a:hover {
 
 		.edge-line {
 			display: inline;
-			height: 20px;
+			min-height: 20px;
 			width: 4px;
 			background-color: $mustard-color;
 			border-radius: 3px;

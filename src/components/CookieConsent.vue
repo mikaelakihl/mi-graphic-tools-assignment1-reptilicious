@@ -96,7 +96,7 @@ button {
 	border-radius: 25px;
 	cursor: pointer;
 	width: 275px;
-	height: 35px;
+	min-height: 35px;
 	font-family: $secondary-font;
 }
 
