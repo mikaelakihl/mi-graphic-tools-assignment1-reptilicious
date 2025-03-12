@@ -81,7 +81,6 @@ const toggleMenu = () => {
 	width: 90vw;
 	min-height: 90vh;
 	border-radius: $large-card-border-radius;
-	display: relative;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;

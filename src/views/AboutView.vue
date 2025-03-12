@@ -77,7 +77,7 @@ main {
 		gap: $small-margin;
 		padding: $small-margin;
 		border-radius: $small-card-border-radius;
-		filter: drop-shadow(rgba(0, 0, 0, 0.25) -4px 4px 4px);
+		filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
 		label {
 			display: flex;
 			flex-direction: column;
@@ -87,7 +87,7 @@ main {
 			font-family: $primary-font;
 			font-size: $h4-fontsize;
 			color: $mustard-color;
-			filter: drop-shadow(rgba(0, 0, 0, 0.25) -4px 4px 4px);
+			filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
 		}
 		.form-input {
 			padding: 0.5rem;
