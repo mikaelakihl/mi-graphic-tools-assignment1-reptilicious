@@ -43,9 +43,7 @@ onUnmounted(removeResizeListener);
 				<div v-else class="image-displayer">
 					<img src="@/assets/images/krokodil_kobra_blue.jpg" width="256" height="261" loading="lazy" />
 					<img src="@/assets/images/krokodil_kobra_green.jpg" width="256" height="261" loading="lazy" />
-					<!-- TODO: Add alt-texts -->
-					<img src="@/assets/images/krokodil_kobra_red.jpg" width="256" height="261" loading="lazy" />
-					<!-- TODO: Change to ".png" -->
+					<img src="@/assets/images/krokodil_kobra_red.png" width="256" height="261" loading="lazy" />
 				</div>
 			</div>
 			<TertiaryButton buttonLabel="All flavors" type="button" @click="$router.push('product')" />
