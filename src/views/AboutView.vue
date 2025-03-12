@@ -45,12 +45,9 @@ import SecondaryButton from '../components/atoms/SecondaryButton.vue';
 </template>
 
 <style lang="scss" scoped>
-// Keep main and h1 in scoped CSS, move the rest to main.scss
 main {
 	gap: $medium-margin;
 	margin: $large-margin $small-margin 0;
-
-	// ----- Keep above -------------------
 	.about-content-container {
 		display: flex;
 		flex-direction: column;
@@ -77,7 +74,7 @@ main {
 		gap: $small-margin;
 		padding: $small-margin;
 		border-radius: $small-card-border-radius;
-		filter: drop-shadow(rgba(0, 0, 0, 0.25) -4px 4px 4px);
+		filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
 		label {
 			display: flex;
 			flex-direction: column;
@@ -87,7 +84,7 @@ main {
 			font-family: $primary-font;
 			font-size: $h4-fontsize;
 			color: $mustard-color;
-			filter: drop-shadow(rgba(0, 0, 0, 0.25) -4px 4px 4px);
+			filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
 		}
 		.form-input {
 			padding: 0.5rem;
@@ -122,7 +119,6 @@ main {
 		}
 		.contact-us-container {
 			grid-column: span 3;
-			// height: 100%;
 		}
 	}
 }
@@ -134,7 +130,7 @@ main {
 		column-gap: $small-margin;
 		margin-inline: $small-margin;
 		h1 {
-			visibility: hidden; // TODO: Alternativt display: none om den istället ska finnas i headern
+			visibility: hidden;
 		}
 		.about-content-container {
 			grid-column: 3 / span 3;

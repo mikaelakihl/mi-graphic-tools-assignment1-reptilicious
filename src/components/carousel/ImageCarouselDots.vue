@@ -23,7 +23,7 @@ defineProps<{
 
 .dot {
 	width: 10px;
-	height: 10px;
+	min-height: 10px;
 	background-color: $aged-copper-color;
 	border-radius: 50%;
 	margin: 0 5px;

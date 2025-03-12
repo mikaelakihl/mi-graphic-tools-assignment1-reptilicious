@@ -45,7 +45,7 @@ const route = useRoute();
 <style lang="scss" scoped>
 .header-desktop {
 	width: 100%;
-	height: 10vh;
+	min-height: 10vh;
 	background-color: $forest-color;
 	top: 0;
 	display: flex;

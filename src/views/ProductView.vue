@@ -91,7 +91,7 @@ article:last-of-type {
 	}
 
 	h1 {
-		visibility: hidden; //TODO: Alternativt display: none om den istället ska finnas i headern
+		visibility: hidden;
 	}
 
 	.small-card {

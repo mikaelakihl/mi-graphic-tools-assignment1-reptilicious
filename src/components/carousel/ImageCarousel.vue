@@ -7,7 +7,6 @@ import krokodilKobraBlue from '../../assets/images/krokodil_kobra_blue.jpg';
 import krokodilKobraGreen from '../../assets/images/krokodil_kobra_green.jpg';
 import krokodilKobraRed from '../../assets/images/krokodil_kobra_red.jpg';
 
-// img list
 const images = [krokodilKobraBlue, krokodilKobraGreen, krokodilKobraRed];
 
 // alt-texts
@@ -17,17 +16,14 @@ const altTexts = [
 	"A predominantly red candy bag labeled 'Reptilicious – Wildly Tasty!' featuring cartoon snakes and crocodiles surrounded by gummy candies.",
 ];
 
-// Index for showed img
 const currentIndex = ref(0);
 
-// Calculate the index for the left and right images
 const leftIndex = computed(() => (currentIndex.value - 1 + images.length) % images.length);
 const rightIndex = computed(() => (currentIndex.value + 1) % images.length);
 const isAnimating = ref(false);
 
-// function to change img
 function nextImage() {
-	if (isAnimating.value) return; // Stoppa om en animation redan pågår
+	if (isAnimating.value) return;
 	isAnimating.value = true;
 
 	currentIndex.value = (currentIndex.value + 1) % images.length;
@@ -35,11 +31,11 @@ function nextImage() {
 
 	setTimeout(() => {
 		isAnimating.value = false;
-	}, 500); // Vänta tills animationen är klar
+	}, 500);
 }
 
 function prevImage() {
-	if (isAnimating.value) return; // Stoppa om en animation redan pågår
+	if (isAnimating.value) return;
 	isAnimating.value = true;
 
 	currentIndex.value = (currentIndex.value - 1 + images.length) % images.length;
@@ -93,7 +89,7 @@ function prevImage() {
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	height: 50vw;
+	min-height: 50vw;
 	width: 100%;
 	min-width: 250px;
 }
@@ -101,7 +97,7 @@ function prevImage() {
 /* img */
 .carousel-image {
 	width: 80%;
-	height: auto;
+	min-height: auto;
 	border-radius: 8px;
 	transition:
 		transform 0.5s ease,

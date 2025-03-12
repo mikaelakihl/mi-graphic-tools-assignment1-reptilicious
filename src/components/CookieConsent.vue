@@ -26,7 +26,7 @@ const rejectCookies = () => {
 
 <template>
 	<div v-if="showBanner" class="cookie-banner">
-		<h2 class="cookie-title">COOKIES</h2>
+		<h2 class="cookie-title">Cookies</h2>
 		<p>
 			This website utilises technologies such as cookies to enable essential site functionality, as well as for
 			analytics, personalisation, and targeted advertising purposes. You may change your setting at any time or accept
@@ -41,6 +41,9 @@ const rejectCookies = () => {
 </template>
 
 <style lang="scss" scoped>
+h2 {
+	text-transform: uppercase;
+}
 .cookie-banner {
 	position: fixed;
 	bottom: 0;
@@ -96,14 +99,13 @@ button {
 	border-radius: 25px;
 	cursor: pointer;
 	width: 275px;
-	height: 35px;
+	min-height: 35px;
 	font-family: $secondary-font;
 }
 
 .reject-btn {
 	background-color: $emerald-color;
 	color: white;
-
 	&:hover {
 		background-color: $white-color;
 		color: rgba($emerald-color, 0.9);
@@ -115,7 +117,6 @@ button {
 .accept-btn {
 	background-color: $forest-color;
 	color: white;
-
 	&:hover {
 		background-color: $white-color;
 		color: rgba($forest-color, 0.9);
@@ -132,7 +133,6 @@ button {
 		right: 20px;
 		padding: 15px;
 	}
-
 	.cookie-title {
 		top: -20px;
 		left: 20px;

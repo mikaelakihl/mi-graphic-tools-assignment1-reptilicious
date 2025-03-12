@@ -24,7 +24,7 @@ article {
 	flex-direction: column;
 	gap: 0.5rem;
 	padding: $small-margin;
-	filter: drop-shadow(rgba(0, 0, 0, 0.25) -4px 4px 4px);
+	filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
 	h2 {
 		font-size: $h3-fontsize;
 	}

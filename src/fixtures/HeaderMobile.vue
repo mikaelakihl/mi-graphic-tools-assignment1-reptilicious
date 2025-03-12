@@ -58,7 +58,7 @@ const toggleMenu = () => {
 <style lang="scss" scoped>
 .header-mobile {
 	width: 100%;
-	height: 60px;
+	min-height: 60px;
 	margin-top: 1rem;
 	display: flex;
 	justify-content: flex-end;
@@ -79,9 +79,8 @@ const toggleMenu = () => {
 .menu-container {
 	background: $emerald-color;
 	width: 90vw;
-	height: 90vh;
+	min-height: 90vh;
 	border-radius: $large-card-border-radius;
-	display: relative;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -92,7 +91,7 @@ const toggleMenu = () => {
 	position: fixed;
 	inset: 0;
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 	backdrop-filter: blur(3px);
 	display: flex;
 	justify-content: center;
@@ -126,7 +125,7 @@ const toggleMenu = () => {
 	display: block;
 	flex-direction: column;
 	width: 5rem;
-	height: 0.4rem;
+	min-height: 0.4rem;
 	margin-top: 4px;
 }
 

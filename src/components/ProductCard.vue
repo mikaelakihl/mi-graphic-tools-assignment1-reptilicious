@@ -13,7 +13,7 @@ const props = defineProps<{
 <template>
 	<article class="product-card">
 		<div class="img-container">
-			<img :src="imgSrc" :alt="imgAlt" width="256" height="261" />
+			<img :src="imgSrc" :alt="imgAlt" width="256" height="261" loading="lazy" />
 		</div>
 		<h2>{{ cardHeader }}</h2>
 		<span>{{ cardSubheader }}</span>
@@ -32,6 +32,7 @@ article {
 	gap: $small-margin;
 	min-width: 100%;
 }
+
 .img-container {
 	height: auto;
 	width: 100%;
@@ -40,7 +41,7 @@ article {
 
 img {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	object-fit: cover;
 }
 

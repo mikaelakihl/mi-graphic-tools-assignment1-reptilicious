@@ -21,7 +21,7 @@ button {
 	font-family: $primary-font;
 	font-size: $h4-fontsize;
 	text-transform: uppercase;
-	filter: drop-shadow(rgba(0, 0, 0, 0.25) -4px 4px 4px);
+	filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
 	cursor: pointer;
 }
 
