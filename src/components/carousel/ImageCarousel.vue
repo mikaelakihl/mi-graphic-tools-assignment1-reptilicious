@@ -9,7 +9,6 @@ import krokodilKobraRed from '../../assets/images/krokodil_kobra_red.jpg';
 
 const images = [krokodilKobraBlue, krokodilKobraGreen, krokodilKobraRed];
 
-// alt-texts
 const altTexts = [
 	"A predominantly blue candy bag labeled 'Reptilicious – Wildly Tasty!' featuring cartoon snakes and crocodiles surrounded by gummy candies.",
 	"A predominantly green candy bag labeled 'Reptilicious – Wildly Tasty!' featuring cartoon snakes and crocodiles surrounded by gummy candies.",
