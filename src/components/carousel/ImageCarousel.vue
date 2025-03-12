@@ -7,20 +7,16 @@ import krokodilKobraBlue from '../../assets/images/krokodil_kobra_blue.jpg';
 import krokodilKobraGreen from '../../assets/images/krokodil_kobra_green.jpg';
 import krokodilKobraRed from '../../assets/images/krokodil_kobra_red.jpg';
 
-// img list
 const images = [krokodilKobraBlue, krokodilKobraGreen, krokodilKobraRed];
 
-// Index for showed img
 const currentIndex = ref(0);
 
-// Calculate the index for the left and right images
 const leftIndex = computed(() => (currentIndex.value - 1 + images.length) % images.length);
 const rightIndex = computed(() => (currentIndex.value + 1) % images.length);
 const isAnimating = ref(false);
 
-// function to change img
 function nextImage() {
-	if (isAnimating.value) return; // Stoppa om en animation redan pågår
+	if (isAnimating.value) return;
 	isAnimating.value = true;
 
 	currentIndex.value = (currentIndex.value + 1) % images.length;
@@ -28,11 +24,11 @@ function nextImage() {
 
 	setTimeout(() => {
 		isAnimating.value = false;
-	}, 500); // Vänta tills animationen är klar
+	}, 500);
 }
 
 function prevImage() {
-	if (isAnimating.value) return; // Stoppa om en animation redan pågår
+	if (isAnimating.value) return;
 	isAnimating.value = true;
 
 	currentIndex.value = (currentIndex.value - 1 + images.length) % images.length;

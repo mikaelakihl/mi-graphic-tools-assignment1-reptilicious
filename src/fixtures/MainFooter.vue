@@ -167,7 +167,6 @@ a:hover {
 		bottom: 0;
 		left: 0;
 	}
-
 	.follow-us-container {
 		order: 2;
 		display: flex;
@@ -177,11 +176,9 @@ a:hover {
 			min-height: auto;
 			padding-bottom: $medium-margin;
 		}
-
 		svg {
 			padding-left: $small-margin;
 		}
-
 		.sub-head {
 			display: none;
 		}
@@ -192,7 +189,6 @@ a:hover {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
 		.edge-line {
 			display: inline;
 			min-height: 20px;
@@ -200,13 +196,11 @@ a:hover {
 			background-color: $mustard-color;
 			border-radius: 3px;
 		}
-
 		ul {
 			display: flex;
 			justify-content: center;
 			margin: $small-margin;
 		}
-
 		li {
 			padding: 0 $small-margin;
 		}

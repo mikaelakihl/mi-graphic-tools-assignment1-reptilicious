@@ -32,6 +32,7 @@ article {
 	gap: $small-margin;
 	min-width: 100%;
 }
+
 .img-container {
 	height: auto;
 	width: 100%;

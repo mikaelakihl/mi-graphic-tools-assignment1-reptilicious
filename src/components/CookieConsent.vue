@@ -106,7 +106,6 @@ button {
 .reject-btn {
 	background-color: $emerald-color;
 	color: white;
-
 	&:hover {
 		background-color: $white-color;
 		color: rgba($emerald-color, 0.9);
@@ -118,7 +117,6 @@ button {
 .accept-btn {
 	background-color: $forest-color;
 	color: white;
-
 	&:hover {
 		background-color: $white-color;
 		color: rgba($forest-color, 0.9);
@@ -135,7 +133,6 @@ button {
 		right: 20px;
 		padding: 15px;
 	}
-
 	.cookie-title {
 		top: -20px;
 		left: 20px;
