@@ -62,10 +62,6 @@ onUnmounted(removeResizeListener);
 						loading="lazy"
 						alt="A predominantly red candy bag labeled 'Reptilicious – Wildly Tasty!' featuring cartoon snakes and crocodiles surrounded by gummy candies."
 					/>
-					<!-- TODO: Change to ".png" -->
-					<img src="@/assets/images/krokodil_kobra_blue.jpg" width="256" height="261" loading="lazy" />
-					<img src="@/assets/images/krokodil_kobra_green.jpg" width="256" height="261" loading="lazy" />
-					<img src="@/assets/images/krokodil_kobra_red.png" width="256" height="261" loading="lazy" />
 				</div>
 			</div>
 			<TertiaryButton buttonLabel="All flavors" type="button" @click="$router.push('product')" />
