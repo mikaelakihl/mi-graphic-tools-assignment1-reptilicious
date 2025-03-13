@@ -40,7 +40,7 @@ const toggleMenu = () => {
 			</RouterLink>
 		</div>
 
-		<MenuIcon :menuOpen="menuOpen" @toggle-menu="toggleMenu" />
+		<MenuIcon :menuOpen="menuOpen" @toggle-menu="toggleMenu" :class="{ hidden: menuOpen }" />
 
 		<div class="menu-overlay" :class="{ open: menuOpen }">
 			<div class="menu-container">
@@ -73,13 +73,16 @@ const toggleMenu = () => {
 }
 
 .hidden {
-	visibility: hidden;
+	transition:
+		opacity 0.6s ease-in-out,
+		visibility 0.6s;
+	opacity: 0;
 }
 
 .menu-container {
 	background: $emerald-color;
-	width: 90vw;
-	min-height: 90vh;
+	width: calc(100% - 60px);
+	min-height: calc(100% - 60px);
 	border-radius: $large-card-border-radius;
 	display: relative;
 	flex-direction: column;
@@ -87,13 +90,11 @@ const toggleMenu = () => {
 	align-items: center;
 	padding: $medium-margin;
 	position: fixed;
-	top: 40px;
-	right: 60px;
 	transform-origin: top right;
 	transform: scale(0);
 	transition:
-		transform 1.4s ease-in-out,
-		opacity 1.3s ease-in-out;
+		transform 0.6s ease-in-out,
+		opacity 0.5s ease-in-out;
 	opacity: 0;
 }
 
@@ -114,8 +115,8 @@ const toggleMenu = () => {
 	visibility: hidden;
 	opacity: 0;
 	transition:
-		opacity 1.4s ease-in-out,
-		visibility 1.4s;
+		opacity 0.6s ease-in-out,
+		visibility 0.6s;
 	z-index: 10;
 }
 
