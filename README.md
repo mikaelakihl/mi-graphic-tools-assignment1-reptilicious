@@ -94,14 +94,30 @@ npm run dev
 ## Screenshots
 
 ### Design Mockups
+Mobile:
+
 <img width="624" alt="Mobile-design" src="https://github.com/user-attachments/assets/d51f8a2c-61b1-4a24-9557-7e803e9e6a38" />
+
+Tablet:
+
+<img width="229" alt="Tablet-design" src="https://github.com/user-attachments/assets/f5f92cbc-5fda-4cec-97c7-2690cbc5315e" />
+
+Desktop:
 
 <img width="564" alt="desktop-design" src="https://github.com/user-attachments/assets/37d7339f-4fda-4d1a-a97c-7fcff17b2028" />
 
-
 ### Final Implementation
+Mobile:
 
-_Add screenshots of the finished website here._
+<img width="282" alt="Mobile" src="https://github.com/user-attachments/assets/2d800217-8afd-452b-b89b-a81d8931868e" /><img width="248" alt="Carousel" src="https://github.com/user-attachments/assets/76cb25bf-f302-47fe-9155-e74c21524dd3" />
+
+Tablet:
+
+<img width="804" alt="Tablet" src="https://github.com/user-attachments/assets/b72c32b7-bec9-4a4f-b51a-a8de5dd6b538" />
+
+Desktop:
+
+<img width="767" alt="Desktop" src="https://github.com/user-attachments/assets/9b8b0242-58d4-4ffb-9e8a-d2e13778848e" />
 
 ## Contributing
 
