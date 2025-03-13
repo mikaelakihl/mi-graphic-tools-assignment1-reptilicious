@@ -40,12 +40,12 @@ const toggleMenu = () => {
 			</RouterLink>
 		</div>
 
-		<MenuIcon :menuOpen="menuOpen" @toggle-menu="toggleMenu" :class="{ hidden: menuOpen }" />
+		<MenuIcon :menuOpen="menuOpen" @toggle-menu="toggleMenu" />
 
 		<div class="menu-overlay" :class="{ open: menuOpen }">
 			<div class="menu-container">
 				<nav class="menu">
-					<div class="menu-title" @click="toggleMenu">close <span></span></div>
+					<div class="menu-title" @click="toggleMenu"><span class="title">close</span><span class="line"></span></div>
 					<RouterLink to="/" @click="toggleMenu">Home</RouterLink>
 					<RouterLink to="/product" @click="toggleMenu">Products</RouterLink>
 					<RouterLink to="/about" @click="toggleMenu">About Us</RouterLink>
@@ -81,10 +81,25 @@ const toggleMenu = () => {
 	width: 90vw;
 	min-height: 90vh;
 	border-radius: $large-card-border-radius;
+	display: relative;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: $medium-margin;
+	position: fixed;
+	top: 40px;
+	right: 60px;
+	transform-origin: top right;
+	transform: scale(0);
+	transition:
+		transform 1.4s ease-in-out,
+		opacity 1.3s ease-in-out;
+	opacity: 0;
+}
+
+.menu-overlay.open .menu-container {
+	transform: scale(1);
+	opacity: 1;
 }
 
 .menu-overlay {
@@ -99,8 +114,8 @@ const toggleMenu = () => {
 	visibility: hidden;
 	opacity: 0;
 	transition:
-		opacity 0.4s ease-in-out,
-		visibility 0.4s;
+		opacity 1.4s ease-in-out,
+		visibility 1.4s;
 	z-index: 10;
 }
 
@@ -117,10 +132,13 @@ const toggleMenu = () => {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+}
+
+.title {
 	cursor: pointer;
 }
 
-.menu-title span {
+.menu-title .line {
 	background-color: $orange-color;
 	display: block;
 	flex-direction: column;
