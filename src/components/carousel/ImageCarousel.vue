@@ -10,6 +10,12 @@ import krokodilKobraRed from '../../assets/images/krokodil_kobra_red.jpg';
 // Array of images used in the carousel
 const images = [krokodilKobraBlue, krokodilKobraGreen, krokodilKobraRed];
 
+const altTexts = [
+	"A predominantly blue candy bag labeled 'Reptilicious – Wildly Tasty!' featuring cartoon snakes and crocodiles surrounded by gummy candies.",
+	"A predominantly green candy bag labeled 'Reptilicious – Wildly Tasty!' featuring cartoon snakes and crocodiles surrounded by gummy candies.",
+	"A predominantly red candy bag labeled 'Reptilicious – Wildly Tasty!' featuring cartoon snakes and crocodiles surrounded by gummy candies.",
+];
+
 // Track the index of the currently displayed image
 const currentIndex = ref(0);
 
@@ -72,7 +78,7 @@ function prevImage() {
 						'carousel-image',
 						{ left: index === leftIndex, center: index === currentIndex, right: index === rightIndex },
 					]"
-					alt="Carousel image"
+					:alt="altTexts[index]"
 				/>
 			</div>
 
