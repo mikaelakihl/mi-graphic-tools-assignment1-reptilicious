@@ -94,8 +94,10 @@ npm run dev
 ## Screenshots
 
 ### Design Mockups
+<img width="624" alt="Mobile-design" src="https://github.com/user-attachments/assets/d51f8a2c-61b1-4a24-9557-7e803e9e6a38" />
 
-_Add screenshots of the received design here._
+<img width="564" alt="desktop-design" src="https://github.com/user-attachments/assets/37d7339f-4fda-4d1a-a97c-7fcff17b2028" />
+
 
 ### Final Implementation
 

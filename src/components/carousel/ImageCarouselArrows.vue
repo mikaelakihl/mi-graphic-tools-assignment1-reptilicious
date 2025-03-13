@@ -13,7 +13,7 @@ defineProps<{
 <style lang="scss" scoped>
 .carousel-arrow {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	transform: translateY(-50%);
 	background-color: rgba($white-color, 0.9);
 	color: $forest-color;
@@ -51,8 +51,8 @@ defineProps<{
 	}
 
 	.carousel-arrow {
-		width: 40px;
-		height: 40px;
+		width: 50px;
+		height: 50px;
 	}
 
 	.carousel-arrow.left {
